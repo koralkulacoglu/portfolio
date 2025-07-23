@@ -60,6 +60,19 @@ export function Navbar() {
             >
               Contact
             </button>
+            <Button
+              asChild
+              size="sm"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 transition-all duration-300 transform hover:scale-105"
+            >
+              <a
+                href="https://drive.google.com/file/d/1YZtAim8SWVnaKD_BY1VePsYPQPvxk8Bj"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -97,6 +110,17 @@ export function Navbar() {
                 className="block px-3 py-2 text-slate-300 hover:text-emerald-400 transition-colors w-full text-left"
               >
                 Contact
+              </button>
+              <button
+                className="block px-3 py-2 text-slate-300 hover:text-emerald-400 transition-colors w-full text-left"
+              >
+                <a
+                  href="https://drive.google.com/file/d/1YZtAim8SWVnaKD_BY1VePsYPQPvxk8Bj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
               </button>
             </div>
           </div>

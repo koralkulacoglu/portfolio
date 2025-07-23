@@ -34,7 +34,7 @@ export function AboutSection() {
             <CardContent className="p-6">
               <div className="flex items-center mb-4">
                 <img
-                  src="/placeholder.svg?height=48&width=48"
+                  src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/800px-University_of_Waterloo_seal.svg.png"
                   alt="University of Waterloo"
                   className="h-12 w-12 rounded-lg mr-3"
                 />

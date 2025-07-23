@@ -10,7 +10,7 @@ export function ExperienceSection() {
       period: "Sep 2025 – Dec 2025",
       description: "Incoming Fall 2025.",
       highlights: [],
-      image: "/placeholder.svg?height=64&width=64",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoJT9e9_EcKAhnTbKazOBli14g29lmzX0K2Q&s",
     },
     {
       company: "AtoB",
@@ -24,7 +24,7 @@ export function ExperienceSection() {
         "Created lead data pipelines, including a Next.js-Ruby on Rails UTM tracking system ingesting 500K+ events monthly, and a Selenium-based UCC-1 web scraper, collecting $150K+ worth of data",
         "Developed a semantic matching algorithm using Sentence Transformers to automatically map columns of user uploaded fuel statements to SQL relations in the Fuel Statement Analyzer",
       ],
-      image: "/placeholder.svg?height=64&width=64",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA8w37ZNAAErTfJx0tHHYlNu-EPyXsrIpdoQ&s",
     },
     {
       company: "D2L",
@@ -38,7 +38,7 @@ export function ExperienceSection() {
         "Developed a tool around Brightspace to automatically build FAISS knowledge graphs and vector databases, enabling semantic search and smart navigation within courses",
         "Designed custom RAG models using AWS Bedrock and Claude for AI tutoring, and integrated with a React.js UI",
       ],
-      image: "/placeholder.svg?height=64&width=64",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQi8-k0UR0lmO6hAHxss7_Q_5DtvNLnjOZzg&s",
     },
   ]
 

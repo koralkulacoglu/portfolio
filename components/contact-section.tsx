@@ -55,15 +55,6 @@ export function ContactSection() {
             <Linkedin className="h-6 w-6" />
             <span>LinkedIn</span>
           </a>
-          <a
-            href="https://koralkulacoglu.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center space-x-2 text-slate-400 hover:text-emerald-400 transition-colors"
-          >
-            <ExternalLink className="h-6 w-6" />
-            <span>Website</span>
-          </a>
         </div>
       </div>
     </section>

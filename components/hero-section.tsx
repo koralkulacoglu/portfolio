@@ -22,10 +22,8 @@ export function HeroSection() {
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
-            Software Engineering student at University of Waterloo passionate about
-            <span className="text-emerald-400"> AI/ML</span>,
-            <span className="text-emerald-400"> full-stack development</span>, and
-            <span className="text-emerald-400"> innovative solutions</span>
+            <span className="text-emerald-400">Software Engineer </span>
+            specializing in Data
           </p>
         </div>
 
@@ -37,11 +35,17 @@ export function HeroSection() {
             View My Work
           </Button>
           <Button
-            onClick={() => scrollToSection("contact")}
+            asChild
             variant="outline"
             className="border-emerald-400 text-emerald-400 hover:bg-emerald-400 hover:text-slate-950 px-8 py-3 text-lg"
           >
-            Get In Touch
+            <a
+              href="https://drive.google.com/file/d/1YZtAim8SWVnaKD_BY1VePsYPQPvxk8Bj"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
           </Button>
         </div>
 
@@ -64,14 +68,6 @@ export function HeroSection() {
           </a>
           <a href="mailto:kulacoglukoral@gmail.com" className="text-slate-400 hover:text-emerald-400 transition-colors">
             <Mail className="h-8 w-8" />
-          </a>
-          <a
-            href="https://koralkulacoglu.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-slate-400 hover:text-emerald-400 transition-colors"
-          >
-            <ExternalLink className="h-8 w-8" />
           </a>
         </div>
       </div>

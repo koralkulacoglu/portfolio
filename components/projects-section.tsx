@@ -18,7 +18,7 @@ export function ProjectsSection() {
       highlights: ["95% accuracy", "Canada-Wide Science Fair Winner", "$20K funding", "Published to CSF Journal"],
       github: "#",
       demo: "#",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://i.ibb.co/xg7f8B6/foursight.png",
     },
     {
       title: "Admini",
@@ -29,7 +29,7 @@ export function ProjectsSection() {
       highlights: ["5-person team lead", "Centralized platform", "AWS infrastructure"],
       github: "#",
       demo: "https://admini.ca",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://i.ibb.co/p24YDsL/Landing-page.png",
     },
     {
       title: "3D Octree Compression",
@@ -39,7 +39,7 @@ export function ProjectsSection() {
       categories: ["Computer Vision"],
       highlights: ["99% memory reduction", "Real-time visualization", "MVC design pattern"],
       github: "#",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://private-user-images.githubusercontent.com/62809012/466762005-bfb98448-b7a4-4b69-8182-5201847749fa.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMyODU5ODgsIm5iZiI6MTc1MzI4NTY4OCwicGF0aCI6Ii82MjgwOTAxMi80NjY3NjIwMDUtYmZiOTg0NDgtYjdhNC00YjY5LTgxODItNTIwMTg0Nzc0OWZhLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIzVDE1NDgwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFhYTA3MWZmNjEzYTYwY2RlZTFhM2QwN2MzMDNhMGI3OGUzNjFkYmU4N2U3MTExYWViMjJlNTVjMmM5Y2YyYmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.u9A1wFt5QpAevDxiS1B_2YT58NSn4XJkrCWV1MQcbZg",
     },
     {
       title: "SentiTrader",
@@ -49,7 +49,7 @@ export function ProjectsSection() {
       categories: ["Artificial Intelligence"],
       highlights: ["12% annualized returns", "Live trading", "Sentiment analysis"],
       github: "#",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://private-user-images.githubusercontent.com/62809012/365475123-1cfc3f1c-a578-453d-a603-fd69c1fa39c0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMyODYxMzksIm5iZiI6MTc1MzI4NTgzOSwicGF0aCI6Ii82MjgwOTAxMi8zNjU0NzUxMjMtMWNmYzNmMWMtYTU3OC00NTNkLWE2MDMtZmQ2OWMxZmEzOWMwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIzVDE1NTAzOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNjNzVlZWY2NmJmMjgxZDEzYzcxOGJkM2Q5MDcxMTY4ZGMwZjhmZTYxOWU4ZTJlMjIzMmU4YmQ1NDRjMDg1YzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0vkoJjr1MGSOILpGfmBy12yNMxbceSsXa2W15Vg33jk",
     },
     {
       title: "Autonomous Car",
@@ -59,7 +59,17 @@ export function ProjectsSection() {
       categories: ["Computer Vision"],
       highlights: ["Real-time detection", "Lane detection", "Object tracking"],
       github: "#",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://i.ibb.co/gtTQf1v/Auto.gif",
+    },
+    {
+      title: "AirBoard",
+      description:
+        "Built a hands-free typing system using MediaPipe hand tracking to control the mouse and keyboard.",
+      technologies: ["Python", "OpenCV", "MediaPipe"],
+      categories: ["Computer Vision", "Human-Computer Interaction"],
+      highlights: ["24-hour build", "Hands-free typing", "Hand landmarks"],
+      github: "#",
+      image: "https://user-images.githubusercontent.com/62809012/120325744-f5953e80-c2b5-11eb-85b2-715d1f2b1fef.gif"
     },
     {
       title: "PrsntAI",
@@ -70,7 +80,7 @@ export function ProjectsSection() {
       highlights: ["Live speech-to-slides", "Fine-tuned GPT-3.5", "Multi-framework implementation"],
       github: "#",
       demo: "https://prsntai.com",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://i.ibb.co/Qk350xP/kitty.png",
     },
     {
       title: "Songsnap",
@@ -80,7 +90,37 @@ export function ProjectsSection() {
       categories: ["Artificial Intelligence", "Backend Dev"],
       highlights: ["UofTHacks 2024", "Photo-to-playlist", "GPT-4 Vision integration"],
       github: "#",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/738/945/datas/original.PNG",
+    },
+    {
+      title: "NoteBot Bryan",
+      description:
+        "Built at DeltaHacks 2024, Bryan is an AI assistant that listens to lectures and generates real-time notes using Whisper and GPT-3.5.",
+      technologies: ["Python", "GPT-3.5", "Whisper", "PyGame", "PyAudio", "Threading"],
+      categories: ["Artificial Intelligence", "Human-Computer Interaction"],
+      highlights: ["DeltaHacks 2024", "Real-time transcription", "Markdown note generation", "Multithreaded PyGame UI"],
+      github: "#",
+      image: "https://i.ibb.co/pyP5QmG/bryan.jpg"
+    },
+    {
+      title: "Histopathology AI",
+      description:
+        "Built an artificial neural network from scratch to classify cancer in histopathological and blood images, with a Flask web app for image-based diagnosis.",
+      technologies: ["Python", "JavaScript", "TensorFlow", "MatPlotLib", "Flask", "NumPy"],
+      categories: ["Artificial Intelligence", "Health Tech"],
+      highlights: ["Custom neural network", "Medical image classification", "Flask web interface"],
+      github: "#",
+      image: "https://firebasestorage.googleapis.com/v0/b/project-leo-mvp.appspot.com/o/attachments%2Fa8eeff00-49ef-417f-b089-785caa9c4ab5%2F7a1bdca2971?alt=media&token=4c94a8e5-4886-4aa3-93ac-714d91966be6"
+    },
+    {
+      title: "COVID 2008 Sim",
+      description:
+        "COVID-19 spread simulation using 2008 Beijing taxi data and PyGame. Users can control infection parameters and observe how the virus spreads over time.",
+      technologies: ["Python", "PyGame", "NumPy"],
+      categories: ["Simulations", "Hackathon"],
+      highlights: ["Graph-based simulation", "2008 Beijing taxi data", "Interactive infection modeling"],
+      github: "#",
+      image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/747/887/datas/original.png"
     },
     {
       title: "Planets",
@@ -90,7 +130,7 @@ export function ProjectsSection() {
       categories: ["Frontend Dev", "Games"],
       highlights: ["Built in 1 day", "3D orbital mechanics", "Interactive exploration"],
       github: "#",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://i.ibb.co/FLydNtYC/planets.gif",
     },
   ]
 
@@ -106,7 +146,7 @@ export function ProjectsSection() {
           My <span className="text-emerald-400">Projects</span>
         </h2>
         <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
-          Below are some of my projects. You can filter projects by topic, or find more projects on my GitHub.
+          Things I've worked on in my free time.
         </p>
 
         {/* Filter Buttons */}
