@@ -171,7 +171,7 @@ export function ProjectsSection() {
         "PyAudio",
         "Threading",
       ],
-      categories: ["Full-Stack", "AI Systems"],
+      categories: ["AI Systems"],
       highlights: [
         "DeltaHacks 2024",
         "Real-time transcription",
