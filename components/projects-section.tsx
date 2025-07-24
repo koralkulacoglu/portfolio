@@ -183,6 +183,27 @@ export function ProjectsSection() {
       image: "/notebot-bryan.jpg",
     },
     {
+      title: "ML Experiments",
+      description:
+        "Personal repo for ML/DL experiments: CPH survival models, decision trees, ResNet-50 saliency maps, and Kaggle code. Inspired by Hands-On Machine Learning.",
+      technologies: [
+        "Python",
+        "Scikit-Learn",
+        "Keras",
+        "TensorFlow",
+        "ResNet-50",
+      ],
+      categories: ["Machine Learning"],
+      highlights: [
+        "CPH survival models",
+        "Decision tree classifiers",
+        "ResNet-50 saliency maps",
+        "Kaggle competition code",
+      ],
+      github: "https://github.com/koralkulacoglu/ML",
+      image: "/ml-experiments.png",
+    },
+    {
       title: "Histopathology AI",
       description:
         "Built an artificial neural network from scratch to classify cancer in histopathological and blood images, with a Flask web app for image-based diagnosis.",
@@ -219,6 +240,27 @@ export function ProjectsSection() {
       image: "/covidtracker.png",
     },
     {
+      title: "Competitive Programming",
+      description:
+        "Journey from Python to C++. Solutions and notes for major contests (AOC, CCC, USACO, CodeForces, etc.), plus scripts for stress-testing and code templates.",
+      technologies: [
+        "Python",
+        "C++",
+        "Algorithms",
+        "Data Structures",
+        "Competitive Programming",
+      ],
+      categories: ["Simulations & Algorithms"],
+      highlights: [
+        "Advent of Code, CCC, USACO, CodeForces, and more",
+        "Stress-testing scripts",
+        "Code templates (e.g., trie)",
+        "17th place in Canada (picoCTF 2022)",
+      ],
+      github: "https://github.com/koralkulacoglu/CompetitiveProgramming",
+      image: "/competitive-programming.jpg",
+    },
+    {
       title: "Planets",
       description:
         "A partial 3D solar system simulation built in 1 day. Uses ForceGraph3D for orbital mechanics and Three.js for realistic texture maps. Fully interactive 3D environment.",
@@ -232,6 +274,28 @@ export function ProjectsSection() {
       github: "https://github.com/koralkulacoglu/planets",
       demo: "https://planets-eosin.vercel.app",
       image: "/planets.gif",
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "This website! Built with Next.js, React, Tailwind CSS, Framer Motion, and TypeScript. Responsive, animated, and fully open source.",
+      technologies: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Framer Motion",
+        "TypeScript",
+      ],
+      categories: ["Full-Stack"],
+      highlights: [
+        "Modern stack",
+        "Fully responsive",
+        "Animated UI",
+        "Open source",
+      ],
+      github: "https://github.com/koralkulacoglu/portfolio",
+      demo: "https://koralkulacoglu.com",
+      image: "/portfolio-website.png",
     },
   ];
 
