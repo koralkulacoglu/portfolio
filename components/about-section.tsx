@@ -57,7 +57,7 @@ export function AboutSection() {
             </p>
           </div>
 
-          <Card className="bg-slate-900 border-slate-800">
+          <Card className="bg-slate-900 border-slate-800 hover:border-emerald-400/50 transition-all duration-500 hover:shadow-lg hover:shadow-emerald-400/10 transform hover:-translate-y-1">
             <CardContent className="p-6">
               <div className="flex items-center mb-4">
                 <img
@@ -86,7 +86,7 @@ export function AboutSection() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="bg-slate-900 border-slate-800">
+          <Card className="bg-slate-900 border-slate-800 hover:border-emerald-400/50 transition-all duration-500 hover:shadow-lg hover:shadow-emerald-400/10 transform hover:-translate-y-1">
             <CardContent className="p-6">
               <div className="flex items-center mb-4">
                 <Code className="h-6 w-6 text-emerald-400 mr-3" />
@@ -106,7 +106,7 @@ export function AboutSection() {
             </CardContent>
           </Card>
 
-          <Card className="bg-slate-900 border-slate-800">
+          <Card className="bg-slate-900 border-slate-800 hover:border-emerald-400/50 transition-all duration-500 hover:shadow-lg hover:shadow-emerald-400/10 transform hover:-translate-y-1">
             <CardContent className="p-6">
               <div className="flex items-center mb-4">
                 <Code className="h-6 w-6 text-emerald-400 mr-3" />
@@ -126,7 +126,7 @@ export function AboutSection() {
             </CardContent>
           </Card>
 
-          <Card className="bg-slate-900 border-slate-800">
+          <Card className="bg-slate-900 border-slate-800 hover:border-emerald-400/50 transition-all duration-500 hover:shadow-lg hover:shadow-emerald-400/10 transform hover:-translate-y-1">
             <CardContent className="p-6">
               <div className="flex items-center mb-4">
                 <Trophy className="h-6 w-6 text-emerald-400 mr-3" />
