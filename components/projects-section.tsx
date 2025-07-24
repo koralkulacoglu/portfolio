@@ -31,6 +31,7 @@ export function ProjectsSection() {
         "Published to CSF Journal",
       ],
       github: "https://github.com/redmac135/foursight",
+      demo: "https://partner.projectboard.world/ysc/project/foursight-analysis-of-cancerous-genetic-profiles-with-artificial-neural-networks",
       image: "https://i.ibb.co/xg7f8B6/foursight.png",
     },
     {
