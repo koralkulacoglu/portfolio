@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Code, Trophy } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
@@ -66,10 +67,14 @@ export function AboutSection() {
             <Card className="group bg-slate-900 border-slate-800 hover:border-emerald-400/50 transition-all duration-500 hover:shadow-lg hover:shadow-emerald-400/10 transform hover:-translate-y-1">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/800px-University_of_Waterloo_seal.svg.png"
+                  <Image
+                    src="/waterloo.png"
                     alt="University of Waterloo"
+                    width={48}
+                    height={48}
                     className="h-12 w-12 rounded-lg mr-3 transition-transform duration-300 group-hover:scale-110"
+                    placeholder="empty"
+                    loading="lazy"
                   />
                   <h3 className="text-xl font-semibold">Education</h3>
                 </div>

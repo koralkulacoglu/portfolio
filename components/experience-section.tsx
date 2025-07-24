@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 import { Calendar, MapPin } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 
@@ -66,10 +67,14 @@ export function ExperienceSection() {
                   <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                     <div className="flex-1">
                       <div className="flex items-center mb-4">
-                        <img
+                        <Image
                           src={exp.image || "/placeholder.svg"}
                           alt={`${exp.company} logo`}
+                          width={64}
+                          height={64}
                           className="h-16 w-16 rounded-lg mr-4 bg-slate-800 p-2 transition-transform duration-300 group-hover:scale-110"
+                          placeholder="empty"
+                          loading="lazy"
                         />
                         <div>
                           <div className="flex items-center mb-2">

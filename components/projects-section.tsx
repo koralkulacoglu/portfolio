@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -311,10 +312,14 @@ export function ProjectsSection() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <img
+                          <Image
                             src={project.image || "/placeholder.svg"}
                             alt={project.title}
+                            width={640}
+                            height={360}
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            placeholder="empty"
+                            loading="lazy"
                           />
                         </a>
                       ) : project.github ? (
@@ -323,17 +328,25 @@ export function ProjectsSection() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <img
+                          <Image
                             src={project.image || "/placeholder.svg"}
                             alt={project.title}
+                            width={640}
+                            height={360}
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            placeholder="empty"
+                            loading="lazy"
                           />
                         </a>
                       ) : (
-                        <img
+                        <Image
                           src={project.image || "/placeholder.svg"}
                           alt={project.title}
+                          width={640}
+                          height={360}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                          placeholder="empty"
+                          loading="lazy"
                         />
                       )}
                     </div>
