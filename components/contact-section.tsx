@@ -19,7 +19,7 @@ export function ContactSection() {
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <Card className="bg-slate-900 border-slate-800">
+          <Card className="group bg-slate-900 border-slate-800 hover:border-emerald-400/50 transition-all duration-500 hover:shadow-lg hover:shadow-emerald-400/10 transform hover:-translate-y-1">
             <CardContent className="p-8 text-center">
               <Mail className="h-12 w-12 text-emerald-400 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Email</h3>
@@ -33,7 +33,7 @@ export function ContactSection() {
             </CardContent>
           </Card>
 
-          <Card className="bg-slate-900 border-slate-800">
+          <Card className="group bg-slate-900 border-slate-800 hover:border-emerald-400/50 transition-all duration-500 hover:shadow-lg hover:shadow-emerald-400/10 transform hover:-translate-y-1">
             <CardContent className="p-8 text-center">
               <MapPin className="h-12 w-12 text-emerald-400 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Location</h3>

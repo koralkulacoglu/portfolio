@@ -57,13 +57,13 @@ export function AboutSection() {
             </p>
           </div>
 
-          <Card className="bg-slate-900 border-slate-800 hover:border-emerald-400/50 transition-all duration-500 hover:shadow-lg hover:shadow-emerald-400/10 transform hover:-translate-y-1">
+          <Card className="group bg-slate-900 border-slate-800 hover:border-emerald-400/50 transition-all duration-500 hover:shadow-lg hover:shadow-emerald-400/10 transform hover:-translate-y-1">
             <CardContent className="p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/800px-University_of_Waterloo_seal.svg.png"
                   alt="University of Waterloo"
-                  className="h-12 w-12 rounded-lg mr-3"
+                  className="h-12 w-12 rounded-lg mr-3 transition-transform duration-300 group-hover:scale-110"
                 />
                 <h3 className="text-xl font-semibold">Education</h3>
               </div>

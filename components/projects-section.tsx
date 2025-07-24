@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
 
 export function ProjectsSection() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -292,106 +294,115 @@ export function ProjectsSection() {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project, index) => (
-            <Card
-              key={index}
-              className="bg-slate-900 border-slate-800 hover:border-emerald-400/50 transition-all duration-500 group overflow-hidden hover:shadow-lg hover:shadow-emerald-400/10 transform hover:-translate-y-2"
-            >
-              <div className="aspect-video overflow-hidden">
-                {project.demo ? (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </a>
-                ) : project.github ? (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </a>
-                ) : (
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                )}
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-start justify-between mb-4">
-                  <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-300">
-                    {project.title}
-                  </h3>
-                  <div className="flex gap-2">
-                    {project.github && (
-                      <a
-                        href={project.github}
-                        className="text-slate-400 hover:text-emerald-400 transition-all duration-300 transform hover:scale-110"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="h-5 w-5" />
-                      </a>
-                    )}
-                    {project.demo && (
+          <AnimatePresence mode="wait">
+            {filteredProjects.map((project, index) => (
+              <motion.div
+                key={project.title}
+                layout
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.35, ease: "easeInOut" }}
+                className="flex h-full"
+              >
+                <Card className="flex flex-col h-full bg-slate-900 border-slate-800 hover:border-emerald-400/50 transition-all duration-500 group overflow-hidden hover:shadow-lg hover:shadow-emerald-400/10 transform hover:-translate-y-2">
+                  <div className="aspect-video overflow-hidden">
+                    {project.demo ? (
                       <a
                         href={project.demo}
-                        className="text-slate-400 hover:text-emerald-400 transition-all duration-300 transform hover:scale-110"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <ExternalLink className="h-5 w-5" />
+                        <img
+                          src={project.image || "/placeholder.svg"}
+                          alt={project.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
                       </a>
+                    ) : project.github ? (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src={project.image || "/placeholder.svg"}
+                          alt={project.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                      </a>
+                    ) : (
+                      <img
+                        src={project.image || "/placeholder.svg"}
+                        alt={project.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
                     )}
                   </div>
-                </div>
+                  <CardContent className="flex flex-col flex-1 p-6">
+                    <div className="flex items-start justify-between mb-4">
+                      <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-300">
+                        {project.title}
+                      </h3>
+                      <div className="flex gap-2">
+                        {project.github && (
+                          <a
+                            href={project.github}
+                            className="text-slate-400 hover:text-emerald-400 transition-all duration-300 transform hover:scale-110"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Github className="h-5 w-5" />
+                          </a>
+                        )}
+                        {project.demo && (
+                          <a
+                            href={project.demo}
+                            className="text-slate-400 hover:text-emerald-400 transition-all duration-300 transform hover:scale-110"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="h-5 w-5" />
+                          </a>
+                        )}
+                      </div>
+                    </div>
 
-                <p className="text-slate-300 mb-4 transition-colors duration-300 group-hover:text-slate-200">
-                  {project.description}
-                </p>
+                    <p className="text-slate-300 mb-4 transition-colors duration-300 group-hover:text-slate-200">
+                      {project.description}
+                    </p>
 
-                {project.highlights.length > 0 && (
-                  <div className="mb-4">
-                    <p className="text-sm text-slate-400 transition-colors duration-300 group-hover:text-slate-300">
-                      <span className="text-emerald-400 font-semibold">
-                        Highlights
-                      </span>
-                      {project.highlights.map((highlight, idx) => (
-                        <span key={idx}>
-                          <span className="text-emerald-400 mx-1">•</span>
-                          <span>{highlight}</span>
+                    {project.highlights.length > 0 && (
+                      <div className="mb-4">
+                        <p className="text-sm text-slate-400 transition-colors duration-300 group-hover:text-slate-300">
+                          <span className="text-emerald-400 font-semibold">
+                            Highlights
+                          </span>
+                          {project.highlights.map((highlight, idx) => (
+                            <span key={idx}>
+                              <span className="text-emerald-400 mx-1">•</span>
+                              <span>{highlight}</span>
+                            </span>
+                          ))}
+                        </p>
+                      </div>
+                    )}
+
+                    <div className="flex flex-wrap gap-1 mt-auto">
+                      {project.technologies.map((tech, idx) => (
+                        <span
+                          key={idx}
+                          className="text-xs text-slate-300 bg-slate-800 px-2 py-1 rounded mr-1 mb-1 transition-all duration-300 hover:bg-slate-700 hover:text-emerald-400 transform hover:scale-105 cursor-default"
+                        >
+                          {tech}
                         </span>
                       ))}
-                    </p>
-                  </div>
-                )}
-
-                <div className="flex flex-wrap gap-1">
-                  {project.technologies.map((tech, idx) => (
-                    <span
-                      key={idx}
-                      className="text-xs text-slate-300 bg-slate-800 px-2 py-1 rounded mr-1 mb-1 transition-all duration-300 hover:bg-slate-700 hover:text-emerald-400 transform hover:scale-105 cursor-default"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
     </section>

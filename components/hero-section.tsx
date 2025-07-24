@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, ExternalLink } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
@@ -66,11 +66,14 @@ export function HeroSection() {
           >
             <Linkedin className="h-8 w-8" />
           </a>
-          <a href="mailto:kulacoglukoral@gmail.com" className="text-slate-400 hover:text-emerald-400 transition-colors">
+          <a
+            href="mailto:kulacoglukoral@gmail.com"
+            className="text-slate-400 hover:text-emerald-400 transition-colors"
+          >
             <Mail className="h-8 w-8" />
           </a>
         </div>
       </div>
     </section>
-  )
+  );
 }
