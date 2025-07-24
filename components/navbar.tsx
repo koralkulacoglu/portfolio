@@ -111,17 +111,14 @@ export function Navbar() {
               >
                 Contact
               </button>
-              <button
+              <a
+                href="https://drive.google.com/file/d/1YZtAim8SWVnaKD_BY1VePsYPQPvxk8Bj"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block px-3 py-2 text-slate-300 hover:text-emerald-400 transition-colors w-full text-left"
               >
-                <a
-                  href="https://drive.google.com/file/d/1YZtAim8SWVnaKD_BY1VePsYPQPvxk8Bj"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Resume
-                </a>
-              </button>
+                Resume
+              </a>
             </div>
           </div>
         )}
