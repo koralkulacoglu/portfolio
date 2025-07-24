@@ -35,7 +35,7 @@ export function ProjectsSection() {
       ],
       github: "https://github.com/redmac135/foursight",
       demo: "https://partner.projectboard.world/ysc/project/foursight-analysis-of-cancerous-genetic-profiles-with-artificial-neural-networks",
-      image: "https://i.ibb.co/xg7f8B6/foursight.png",
+      image: "/foursight.png",
     },
     {
       title: "Admini",
@@ -59,7 +59,7 @@ export function ProjectsSection() {
       ],
       github: "https://github.com/admini-ca",
       demo: "https://admini.ca",
-      image: "https://i.ibb.co/p24YDsL/Landing-page.png",
+      image: "/admini.png",
     },
     {
       title: "3D Octree Compression",
@@ -73,8 +73,7 @@ export function ProjectsSection() {
         "MVC design pattern",
       ],
       github: "https://github.com/koralkulacoglu/3d-octree-compression",
-      image:
-        "https://private-user-images.githubusercontent.com/62809012/466762005-bfb98448-b7a4-4b69-8182-5201847749fa.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMyODU5ODgsIm5iZiI6MTc1MzI4NTY4OCwicGF0aCI6Ii82MjgwOTAxMi80NjY3NjIwMDUtYmZiOTg0NDgtYjdhNC00YjY5LTgxODItNTIwMTg0Nzc0OWZhLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIzVDE1NDgwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFhYTA3MWZmNjEzYTYwY2RlZTFhM2QwN2MzMDNhMGI3OGUzNjFkYmU4N2U3MTExYWViMjJlNTVjMmM5Y2YyYmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.u9A1wFt5QpAevDxiS1B_2YT58NSn4XJkrCWV1MQcbZg",
+      image: "/3d-octree-compression.gif",
     },
     {
       title: "SentiTrader",
@@ -88,8 +87,7 @@ export function ProjectsSection() {
         "Sentiment analysis",
       ],
       github: "https://github.com/koralkulacoglu/SentiTrader",
-      image:
-        "https://private-user-images.githubusercontent.com/62809012/365475123-1cfc3f1c-a578-453d-a603-fd69c1fa39c0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMyODYxMzksIm5iZiI6MTc1MzI4NTgzOSwicGF0aCI6Ii82MjgwOTAxMi8zNjU0NzUxMjMtMWNmYzNmMWMtYTU3OC00NTNkLWE2MDMtZmQ2OWMxZmEzOWMwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIzVDE1NTAzOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNjNzVlZWY2NmJmMjgxZDEzYzcxOGJkM2Q5MDcxMTY4ZGMwZjhmZTYxOWU4ZTJlMjIzMmU4YmQ1NDRjMDg1YzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0vkoJjr1MGSOILpGfmBy12yNMxbceSsXa2W15Vg33jk",
+      image: "/sentitrader.png",
     },
     {
       title: "Autonomous Car",
@@ -100,7 +98,7 @@ export function ProjectsSection() {
       highlights: ["Real-time detection", "Lane detection", "Object tracking"],
       github: "https://github.com/koralkulacoglu/AutonomousCar",
       demo: "https://www.youtube.com/watch?v=I9cR4of2jlo&list=PL4iMkUwfSFa3LzvXLPlDLKk0EshU3x4gV",
-      image: "https://i.ibb.co/gtTQf1v/Auto.gif",
+      image: "/autonomous-car.gif",
     },
     {
       title: "AirBoard",
@@ -110,8 +108,7 @@ export function ProjectsSection() {
       categories: ["Computer Vision"],
       highlights: ["24-hour build", "Hands-free typing", "Hand landmarks"],
       github: "https://github.com/koralkulacoglu/AirBoard",
-      image:
-        "https://user-images.githubusercontent.com/62809012/120325744-f5953e80-c2b5-11eb-85b2-715d1f2b1fef.gif",
+      image: "/airboard.gif",
     },
     {
       title: "PrsntAI",
@@ -135,7 +132,7 @@ export function ProjectsSection() {
       ],
       github: "https://github.com/prsntai",
       demo: "https://prsntai.com",
-      image: "https://i.ibb.co/Qk350xP/kitty.png",
+      image: "/prsntai.png",
     },
     {
       title: "Songsnap",
@@ -159,8 +156,7 @@ export function ProjectsSection() {
       ],
       github: "https://github.com/SubwayMan/songsnap",
       demo: "https://devpost.com/software/songsnap-p10xbc",
-      image:
-        "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/738/945/datas/original.PNG",
+      image: "/songsnap.png",
     },
     {
       title: "NoteBot Bryan",
@@ -183,7 +179,7 @@ export function ProjectsSection() {
       ],
       github: "https://github.com/romistaro/NoteBotBryan",
       demo: "https://devpost.com/software/bryan",
-      image: "https://i.ibb.co/pyP5QmG/bryan.jpg",
+      image: "/notebot-bryan.jpg",
     },
     {
       title: "Histopathology AI",
@@ -204,8 +200,7 @@ export function ProjectsSection() {
         "Flask web interface",
       ],
       github: "https://github.com/koralkulacoglu/ScienceFair2021",
-      image:
-        "https://firebasestorage.googleapis.com/v0/b/project-leo-mvp.appspot.com/o/attachments%2Fa8eeff00-49ef-417f-b089-785caa9c4ab5%2F7a1bdca2971?alt=media&token=4c94a8e5-4886-4aa3-93ac-714d91966be6",
+      image: "/histopathology-ai.jpg",
     },
     {
       title: "COVIDTracker",
@@ -220,8 +215,7 @@ export function ProjectsSection() {
       ],
       github: "https://github.com/koralkulacoglu/COVIDTracker",
       demo: "https://devpost.com/software/covid-2008-sim",
-      image:
-        "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/747/887/datas/original.png",
+      image: "/covidtracker.png",
     },
     {
       title: "Planets",
@@ -236,7 +230,7 @@ export function ProjectsSection() {
       ],
       github: "https://github.com/koralkulacoglu/planets",
       demo: "https://planets-eosin.vercel.app",
-      image: "https://i.ibb.co/FLydNtYC/planets.gif",
+      image: "/planets.gif",
     },
   ];
 

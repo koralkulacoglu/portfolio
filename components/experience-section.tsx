@@ -11,8 +11,7 @@ export function ExperienceSection() {
       period: "Sep 2025 – Dec 2025",
       description: "Incoming Fall 2025.",
       highlights: [],
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoJT9e9_EcKAhnTbKazOBli14g29lmzX0K2Q&s",
+      image: "/bitgo.jpg",
     },
     {
       company: "AtoB",
@@ -26,8 +25,7 @@ export function ExperienceSection() {
         "Created data pipelines: UTM tracking (500K+ events/month) and UCC-1 web scraper ($150K+ data)",
         "Developed semantic matching for user-uploaded fuel statements to SQL relations",
       ],
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA8w37ZNAAErTfJx0tHHYlNu-EPyXsrIpdoQ&s",
+      image: "/atob.jpg",
     },
     {
       company: "D2L",
@@ -41,8 +39,7 @@ export function ExperienceSection() {
         "Created Brightspace tool for FAISS knowledge graphs and semantic course search",
         "Designed custom RAG models for AI tutoring, integrated with React UI",
       ],
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQi8-k0UR0lmO6hAHxss7_Q_5DtvNLnjOZzg&s",
+      image: "/d2l.png",
     },
   ];
 
