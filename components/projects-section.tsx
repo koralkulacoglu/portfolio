@@ -1,33 +1,59 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Github, ExternalLink } from "lucide-react"
+import { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Github, ExternalLink } from "lucide-react";
 
 export function ProjectsSection() {
-  const [activeFilter, setActiveFilter] = useState("All")
+  const [activeFilter, setActiveFilter] = useState("All");
 
   const projects = [
     {
       title: "FourSight",
       description:
         "Built a 95% accurate neural network to classify 12 types of cancer from microarray samples. Won the Canada-Wide Science Fair and represented Canada at the EU Contest for Young Scientists (2nd place).",
-      technologies: ["Python", "JavaScript", "TensorFlow", "MatPlotLib", "Django", "Docker", "Heroku", "Pandas"],
-      categories: ["Artificial Intelligence"],
-      highlights: ["95% accuracy", "Canada-Wide Science Fair Winner", "$20K funding", "Published to CSF Journal"],
-      github: "#",
-      demo: "#",
+      technologies: [
+        "Python",
+        "JavaScript",
+        "TensorFlow",
+        "MatPlotLib",
+        "Django",
+        "Docker",
+        "Heroku",
+        "Pandas",
+      ],
+      categories: ["Full-Stack", "Machine Learning"],
+      highlights: [
+        "95% accuracy",
+        "Canada-Wide Science Fair Winner",
+        "$20K funding",
+        "Published to CSF Journal",
+      ],
+      github: "https://github.com/redmac135/foursight",
       image: "https://i.ibb.co/xg7f8B6/foursight.png",
     },
     {
       title: "Admini",
       description:
         "Led a 5-person software team to develop a centralized government contracting platform. Built a fully responsive landing page and 10+ application pages using React with MUI and Tailwind CSS.",
-      technologies: ["AWS", "EC2", "DynamoDB", "S3", "React", "Python", "JavaScript", "TypeScript"],
-      categories: ["Frontend Dev", "Backend Dev"],
-      highlights: ["5-person team lead", "Centralized platform", "AWS infrastructure"],
-      github: "#",
+      technologies: [
+        "AWS",
+        "EC2",
+        "DynamoDB",
+        "S3",
+        "React",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+      ],
+      categories: ["Full-Stack"],
+      highlights: [
+        "5-person team lead",
+        "Centralized platform",
+        "AWS infrastructure",
+      ],
+      github: "https://github.com/admini-ca",
       demo: "https://admini.ca",
       image: "https://i.ibb.co/p24YDsL/Landing-page.png",
     },
@@ -36,20 +62,30 @@ export function ProjectsSection() {
       description:
         "Developed a 3D object compression algorithm using octrees, achieving up to 99% memory reduction. Built a real-time OpenGL visualizer using MVC design pattern.",
       technologies: ["C++", "OpenGL", "Computer Graphics"],
-      categories: ["Computer Vision"],
-      highlights: ["99% memory reduction", "Real-time visualization", "MVC design pattern"],
-      github: "#",
-      image: "https://private-user-images.githubusercontent.com/62809012/466762005-bfb98448-b7a4-4b69-8182-5201847749fa.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMyODU5ODgsIm5iZiI6MTc1MzI4NTY4OCwicGF0aCI6Ii82MjgwOTAxMi80NjY3NjIwMDUtYmZiOTg0NDgtYjdhNC00YjY5LTgxODItNTIwMTg0Nzc0OWZhLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIzVDE1NDgwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFhYTA3MWZmNjEzYTYwY2RlZTFhM2QwN2MzMDNhMGI3OGUzNjFkYmU4N2U3MTExYWViMjJlNTVjMmM5Y2YyYmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.u9A1wFt5QpAevDxiS1B_2YT58NSn4XJkrCWV1MQcbZg",
+      categories: ["Simulations & Algorithms"],
+      highlights: [
+        "99% memory reduction",
+        "Real-time visualization",
+        "MVC design pattern",
+      ],
+      github: "https://github.com/koralkulacoglu/3d-octree-compression",
+      image:
+        "https://private-user-images.githubusercontent.com/62809012/466762005-bfb98448-b7a4-4b69-8182-5201847749fa.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMyODU5ODgsIm5iZiI6MTc1MzI4NTY4OCwicGF0aCI6Ii82MjgwOTAxMi80NjY3NjIwMDUtYmZiOTg0NDgtYjdhNC00YjY5LTgxODItNTIwMTg0Nzc0OWZhLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIzVDE1NDgwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFhYTA3MWZmNjEzYTYwY2RlZTFhM2QwN2MzMDNhMGI3OGUzNjFkYmU4N2U3MTExYWViMjJlNTVjMmM5Y2YyYmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.u9A1wFt5QpAevDxiS1B_2YT58NSn4XJkrCWV1MQcbZg",
     },
     {
       title: "SentiTrader",
       description:
         "Developed a medium-frequency sentiment analysis trading bot that scrapes r/worldnews. Live-tested Keras and Sklearn models reaching 12% annualized returns.",
       technologies: ["Python", "Keras", "Sklearn", "Sentiment Analysis"],
-      categories: ["Artificial Intelligence"],
-      highlights: ["12% annualized returns", "Live trading", "Sentiment analysis"],
-      github: "#",
-      image: "https://private-user-images.githubusercontent.com/62809012/365475123-1cfc3f1c-a578-453d-a603-fd69c1fa39c0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMyODYxMzksIm5iZiI6MTc1MzI4NTgzOSwicGF0aCI6Ii82MjgwOTAxMi8zNjU0NzUxMjMtMWNmYzNmMWMtYTU3OC00NTNkLWE2MDMtZmQ2OWMxZmEzOWMwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIzVDE1NTAzOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNjNzVlZWY2NmJmMjgxZDEzYzcxOGJkM2Q5MDcxMTY4ZGMwZjhmZTYxOWU4ZTJlMjIzMmU4YmQ1NDRjMDg1YzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0vkoJjr1MGSOILpGfmBy12yNMxbceSsXa2W15Vg33jk",
+      categories: ["Machine Learning"],
+      highlights: [
+        "12% annualized returns",
+        "Live trading",
+        "Sentiment analysis",
+      ],
+      github: "https://github.com/koralkulacoglu/SentiTrader",
+      image:
+        "https://private-user-images.githubusercontent.com/62809012/365475123-1cfc3f1c-a578-453d-a603-fd69c1fa39c0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMyODYxMzksIm5iZiI6MTc1MzI4NTgzOSwicGF0aCI6Ii82MjgwOTAxMi8zNjU0NzUxMjMtMWNmYzNmMWMtYTU3OC00NTNkLWE2MDMtZmQ2OWMxZmEzOWMwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIzVDE1NTAzOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNjNzVlZWY2NmJmMjgxZDEzYzcxOGJkM2Q5MDcxMTY4ZGMwZjhmZTYxOWU4ZTJlMjIzMmU4YmQ1NDRjMDg1YzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0vkoJjr1MGSOILpGfmBy12yNMxbceSsXa2W15Vg33jk",
     },
     {
       title: "Autonomous Car",
@@ -58,7 +94,8 @@ export function ProjectsSection() {
       technologies: ["Python", "OpenCV", "NumPy", "YOLOv4-tiny"],
       categories: ["Computer Vision"],
       highlights: ["Real-time detection", "Lane detection", "Object tracking"],
-      github: "#",
+      github: "https://github.com/koralkulacoglu/AutonomousCar",
+      demo: "https://www.youtube.com/watch?v=I9cR4of2jlo&list=PL4iMkUwfSFa3LzvXLPlDLKk0EshU3x4gV",
       image: "https://i.ibb.co/gtTQf1v/Auto.gif",
     },
     {
@@ -66,19 +103,33 @@ export function ProjectsSection() {
       description:
         "Built a hands-free typing system using MediaPipe hand tracking to control the mouse and keyboard.",
       technologies: ["Python", "OpenCV", "MediaPipe"],
-      categories: ["Computer Vision", "Human-Computer Interaction"],
+      categories: ["Computer Vision"],
       highlights: ["24-hour build", "Hands-free typing", "Hand landmarks"],
-      github: "#",
-      image: "https://user-images.githubusercontent.com/62809012/120325744-f5953e80-c2b5-11eb-85b2-715d1f2b1fef.gif"
+      github: "https://github.com/koralkulacoglu/AirBoard",
+      image:
+        "https://user-images.githubusercontent.com/62809012/120325744-f5953e80-c2b5-11eb-85b2-715d1f2b1fef.gif",
     },
     {
       title: "PrsntAI",
       description:
         "A startup that transforms speech into presentation slides live using AI. Fine-tuned GPT-3.5 and used DALL-E for image generation. Deployed to prsntai.com using Vercel.",
-      technologies: ["Python", "JavaScript", "GPT-3.5", "DALL-E", "React", "Django", "Flask", "Vercel"],
-      categories: ["Artificial Intelligence", "Frontend Dev"],
-      highlights: ["Live speech-to-slides", "Fine-tuned GPT-3.5", "Multi-framework implementation"],
-      github: "#",
+      technologies: [
+        "Python",
+        "JavaScript",
+        "GPT-3.5",
+        "DALL-E",
+        "React",
+        "Django",
+        "Flask",
+        "Vercel",
+      ],
+      categories: ["Full-Stack", "AI Systems"],
+      highlights: [
+        "Live speech-to-slides",
+        "Fine-tuned GPT-3.5",
+        "Multi-framework implementation",
+      ],
+      github: "https://github.com/prsntai",
       demo: "https://prsntai.com",
       image: "https://i.ibb.co/Qk350xP/kitty.png",
     },
@@ -86,58 +137,118 @@ export function ProjectsSection() {
       title: "Songsnap",
       description:
         "2024 UofTHacks project. Website that inputs photos and generates Spotify playlists that encapsulate the moment using GPT-4 Vision and fine-tuned GPT-3.5.",
-      technologies: ["Python", "GPT-4 Vision", "GPT-3.5", "Cohere", "PostgreSQL", "Spotify API", "Auth0", "Flask"],
-      categories: ["Artificial Intelligence", "Backend Dev"],
-      highlights: ["UofTHacks 2024", "Photo-to-playlist", "GPT-4 Vision integration"],
-      github: "#",
-      image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/738/945/datas/original.PNG",
+      technologies: [
+        "Python",
+        "GPT-4 Vision",
+        "GPT-3.5",
+        "Cohere",
+        "PostgreSQL",
+        "Spotify API",
+        "Auth0",
+        "Flask",
+      ],
+      categories: ["Full-Stack", "AI Systems"],
+      highlights: [
+        "UofTHacks 2024",
+        "Photo-to-playlist",
+        "GPT-4 Vision integration",
+      ],
+      github: "https://github.com/SubwayMan/songsnap",
+      demo: "https://devpost.com/software/songsnap-p10xbc",
+      image:
+        "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/738/945/datas/original.PNG",
     },
     {
       title: "NoteBot Bryan",
       description:
         "Built at DeltaHacks 2024, Bryan is an AI assistant that listens to lectures and generates real-time notes using Whisper and GPT-3.5.",
-      technologies: ["Python", "GPT-3.5", "Whisper", "PyGame", "PyAudio", "Threading"],
-      categories: ["Artificial Intelligence", "Human-Computer Interaction"],
-      highlights: ["DeltaHacks 2024", "Real-time transcription", "Markdown note generation", "Multithreaded PyGame UI"],
-      github: "#",
-      image: "https://i.ibb.co/pyP5QmG/bryan.jpg"
+      technologies: [
+        "Python",
+        "GPT-3.5",
+        "Whisper",
+        "PyGame",
+        "PyAudio",
+        "Threading",
+      ],
+      categories: ["Full-Stack", "AI Systems"],
+      highlights: [
+        "DeltaHacks 2024",
+        "Real-time transcription",
+        "Markdown note generation",
+        "Multithreaded PyGame UI",
+      ],
+      github: "https://github.com/romistaro/NoteBotBryan",
+      demo: "https://devpost.com/software/bryan",
+      image: "https://i.ibb.co/pyP5QmG/bryan.jpg",
     },
     {
       title: "Histopathology AI",
       description:
         "Built an artificial neural network from scratch to classify cancer in histopathological and blood images, with a Flask web app for image-based diagnosis.",
-      technologies: ["Python", "JavaScript", "TensorFlow", "MatPlotLib", "Flask", "NumPy"],
-      categories: ["Artificial Intelligence", "Health Tech"],
-      highlights: ["Custom neural network", "Medical image classification", "Flask web interface"],
-      github: "#",
-      image: "https://firebasestorage.googleapis.com/v0/b/project-leo-mvp.appspot.com/o/attachments%2Fa8eeff00-49ef-417f-b089-785caa9c4ab5%2F7a1bdca2971?alt=media&token=4c94a8e5-4886-4aa3-93ac-714d91966be6"
+      technologies: [
+        "Python",
+        "JavaScript",
+        "TensorFlow",
+        "MatPlotLib",
+        "Flask",
+        "NumPy",
+      ],
+      categories: ["Full-Stack", "Machine Learning"],
+      highlights: [
+        "Custom neural network",
+        "Medical image classification",
+        "Flask web interface",
+      ],
+      github: "https://github.com/koralkulacoglu/ScienceFair2021",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/project-leo-mvp.appspot.com/o/attachments%2Fa8eeff00-49ef-417f-b089-785caa9c4ab5%2F7a1bdca2971?alt=media&token=4c94a8e5-4886-4aa3-93ac-714d91966be6",
     },
     {
-      title: "COVID 2008 Sim",
+      title: "COVIDTracker",
       description:
         "COVID-19 spread simulation using 2008 Beijing taxi data and PyGame. Users can control infection parameters and observe how the virus spreads over time.",
       technologies: ["Python", "PyGame", "NumPy"],
-      categories: ["Simulations", "Hackathon"],
-      highlights: ["Graph-based simulation", "2008 Beijing taxi data", "Interactive infection modeling"],
-      github: "#",
-      image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/747/887/datas/original.png"
+      categories: ["Simulations & Algorithms"],
+      highlights: [
+        "Graph-based simulation",
+        "2008 Beijing taxi data",
+        "Interactive infection modeling",
+      ],
+      github: "https://github.com/koralkulacoglu/COVIDTracker",
+      demo: "https://devpost.com/software/covid-2008-sim",
+      image:
+        "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/747/887/datas/original.png",
     },
     {
       title: "Planets",
       description:
         "A partial 3D solar system simulation built in 1 day. Uses ForceGraph3D for orbital mechanics and Three.js for realistic texture maps. Fully interactive 3D environment.",
       technologies: ["React", "Three.js", "WebGL", "JavaScript"],
-      categories: ["Frontend Dev", "Games"],
-      highlights: ["Built in 1 day", "3D orbital mechanics", "Interactive exploration"],
-      github: "#",
+      categories: ["Simulations & Algorithms"],
+      highlights: [
+        "Built in 1 day",
+        "3D orbital mechanics",
+        "Interactive exploration",
+      ],
+      github: "https://github.com/koralkulacoglu/planets",
+      demo: "https://planets-eosin.vercel.app",
       image: "https://i.ibb.co/FLydNtYC/planets.gif",
     },
-  ]
+  ];
 
-  const categories = ["All", "Artificial Intelligence", "Frontend Dev", "Backend Dev", "Computer Vision", "Games"]
+  const categories = [
+    "All",
+    "Full-Stack",
+    "Machine Learning",
+    "AI Systems",
+    "Computer Vision",
+    "Simulations & Algorithms",
+  ];
 
   const filteredProjects =
-    activeFilter === "All" ? projects : projects.filter((project) => project.categories.includes(activeFilter))
+    activeFilter === "All"
+      ? projects
+      : projects.filter((project) => project.categories.includes(activeFilter));
 
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -145,9 +256,20 @@ export function ProjectsSection() {
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
           My <span className="text-emerald-400">Projects</span>
         </h2>
-        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
-          Things I've worked on in my free time.
-        </p>
+        <div className="mb-12 max-w-2xl mx-auto flex justify-center items-center text-slate-400">
+          <p className="text-center mr-2">
+            A few of my projects —{" "}
+            <a
+              href="https://github.com/koralkulacoglu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-1 hover:text-emerald-400 transition-colors"
+            >
+              <span>all on GitHub</span>
+              <Github className="h-6 w-6" />
+            </a>
+          </p>
+        </div>
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
@@ -175,11 +297,37 @@ export function ProjectsSection() {
               className="bg-slate-900 border-slate-800 hover:border-emerald-400/50 transition-all duration-500 group overflow-hidden hover:shadow-lg hover:shadow-emerald-400/10 transform hover:-translate-y-2"
             >
               <div className="aspect-video overflow-hidden">
-                <img
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+                {project.demo ? (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </a>
+                ) : project.github ? (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </a>
+                ) : (
+                  <img
+                    src={project.image || "/placeholder.svg"}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                )}
               </div>
               <CardContent className="p-6">
                 <div className="flex items-start justify-between mb-4">
@@ -217,7 +365,9 @@ export function ProjectsSection() {
                 {project.highlights.length > 0 && (
                   <div className="mb-4">
                     <p className="text-sm text-slate-400 transition-colors duration-300 group-hover:text-slate-300">
-                      <span className="text-emerald-400 font-semibold">Highlights</span>
+                      <span className="text-emerald-400 font-semibold">
+                        Highlights
+                      </span>
                       {project.highlights.map((highlight, idx) => (
                         <span key={idx}>
                           <span className="text-emerald-400 mx-1">•</span>
@@ -244,5 +394,5 @@ export function ProjectsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
