@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
+import Image from "next/image";
 
 export function ContactSection() {
   return (
@@ -75,6 +76,24 @@ export function ContactSection() {
             >
               <Linkedin className="h-6 w-6" />
               <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://se-webring.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-slate-400 hover:text-emerald-400 transition-colors group"
+            >
+              <span className="relative h-8 w-8">
+                <Image
+                  src="/se-webring.png"
+                  alt="SE Webring"
+                  fill
+                  className="object-contain filter [filter:brightness(0.65)_contrast(0.9)_grayscale(0.2)_hue-rotate(240deg)_saturate(0.8)] group-hover:filter group-hover:[filter:brightness(0)_invert(56%)_sepia(85%)_saturate(750%)_hue-rotate(117deg)_brightness(1.15)]"
+                  placeholder="empty"
+                  loading="lazy"
+                />
+              </span>
+              <span>SE Webring</span>
             </a>
           </div>
         </AnimatedSection>
