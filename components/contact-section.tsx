@@ -85,7 +85,7 @@ export function ContactSection() {
             >
               <span className="relative h-8 w-8">
                 <Image
-                  src="/se-webring.png"
+                  src="/se-webring.svg"
                   alt="SE Webring"
                   fill
                   className="object-contain filter [filter:brightness(0.65)_contrast(0.9)_grayscale(0.2)_hue-rotate(240deg)_saturate(0.8)] group-hover:filter group-hover:[filter:brightness(0)_invert(56%)_sepia(85%)_saturate(750%)_hue-rotate(117deg)_brightness(1.15)]"
