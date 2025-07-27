@@ -13,13 +13,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/icon" type="image/png" />
         <style>{`
 html {
   font-family: ${GeistSans.style.fontFamily};
