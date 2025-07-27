@@ -102,7 +102,7 @@ export function BackgroundElements() {
             const dy = particle.y - otherParticle.y;
             const distance = Math.sqrt(dx * dx + dy * dy);
 
-            if (distance < 120) {
+            if (distance < 170) {
               // Calculate mouse influence on connection
               const midX = (particle.x + otherParticle.x) / 2;
               const midY = (particle.y + otherParticle.y) / 2;
