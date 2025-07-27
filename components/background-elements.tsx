@@ -102,7 +102,10 @@ export function BackgroundElements() {
             const dy = particle.y - otherParticle.y;
             const distance = Math.sqrt(dx * dx + dy * dy);
 
-            if (distance < 170) {
+            // Connection threshold scales with screen size, but less aggressively
+            const connectionThreshold =
+              120 + Math.sqrt(canvas.width * canvas.height) * 0.09;
+            if (distance < connectionThreshold) {
               // Calculate mouse influence on connection
               const midX = (particle.x + otherParticle.x) / 2;
               const midY = (particle.y + otherParticle.y) / 2;
@@ -113,14 +116,16 @@ export function BackgroundElements() {
               );
               const mouseMaxDistance = 100;
 
-              let connectionOpacity = 0.28 * (1 - distance / 120); // higher base opacity for edges
+              // Lower base opacity and scale for edges
+              let connectionOpacity =
+                0.18 * (1 - distance / connectionThreshold);
 
               // Brighten connection if mouse is nearby
               if (mouseDistance < mouseMaxDistance) {
                 const mouseProximity = 1 - mouseDistance / mouseMaxDistance;
                 connectionOpacity = Math.min(
-                  connectionOpacity + mouseProximity * 0.5,
-                  1
+                  connectionOpacity + mouseProximity * 0.3,
+                  0.7
                 );
               }
 
