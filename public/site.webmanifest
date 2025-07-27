@@ -3,8 +3,6 @@
   "short_name": "Koral",
   "start_url": "/",
   "display": "minimal-ui",
-  "background_color": "#1e293b",
-  "theme_color": "#1e293b",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
