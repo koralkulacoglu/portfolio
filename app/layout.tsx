@@ -33,7 +33,6 @@ export default function RootLayout({
           sizes="16x16"
           href="/favicon_io/favicon-16x16.png"
         />
-        <link rel="manifest" href="/favicon_io/site.webmanifest" />
         <link rel="shortcut icon" href="/favicon_io/favicon.ico" />
         <style>{`
 html {
