@@ -43,7 +43,7 @@ html {
 }
         `}</style>
       </head>
-      <body>
+      <body style={{ background: "#1e293b" }}>
         {children}
         <Analytics />
         <SpeedInsights />
