@@ -30,6 +30,8 @@
 @layer base {
   * {
     @apply border-border;
+    overscroll-behavior: none;
+    background: hsl(var(--background));
   }
   body {
     @apply bg-background text-foreground;
@@ -38,6 +40,8 @@
 
 html {
   scroll-behavior: smooth;
+  overscroll-behavior: none;
+  background: hsl(var(--background));
 }
 
 /* Custom scrollbar */
