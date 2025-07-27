@@ -33,15 +33,11 @@
   }
   body {
     @apply bg-background text-foreground;
-    min-height: 100vh;
-    background-color: hsl(var(--background));
   }
 }
 
 html {
   scroll-behavior: smooth;
-  min-height: 100vh;
-  background-color: hsl(var(--background));
 }
 
 /* Custom scrollbar */
