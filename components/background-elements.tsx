@@ -43,13 +43,13 @@ export function BackgroundElements() {
 
     // Create particles
     for (let i = 0; i < 60; i++) {
-      const baseOpacity = Math.random() * 0.4 + 0.2;
+      const baseOpacity = Math.random() * 0.3 + 0.5; // higher base opacity
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         vx: (Math.random() - 0.5) * 0.5,
         vy: (Math.random() - 0.5) * 0.5,
-        size: Math.random() * 2 + 1,
+        size: Math.random() * 2.5 + 2, // slightly larger nodes
         opacity: baseOpacity,
         baseOpacity: baseOpacity,
       });
@@ -89,8 +89,11 @@ export function BackgroundElements() {
         // Draw particle
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+        ctx.shadowColor = "rgba(16, 185, 129, 0.7)";
+        ctx.shadowBlur = 8;
         ctx.fillStyle = `rgba(16, 185, 129, ${particle.opacity})`;
         ctx.fill();
+        ctx.shadowBlur = 0;
 
         // Draw connections
         particles.forEach((otherParticle, otherIndex) => {
@@ -110,14 +113,14 @@ export function BackgroundElements() {
               );
               const mouseMaxDistance = 100;
 
-              let connectionOpacity = 0.15 * (1 - distance / 120);
+              let connectionOpacity = 0.28 * (1 - distance / 120); // higher base opacity for edges
 
               // Brighten connection if mouse is nearby
               if (mouseDistance < mouseMaxDistance) {
                 const mouseProximity = 1 - mouseDistance / mouseMaxDistance;
                 connectionOpacity = Math.min(
-                  connectionOpacity + mouseProximity * 0.4,
-                  0.8
+                  connectionOpacity + mouseProximity * 0.5,
+                  1
                 );
               }
 
@@ -125,7 +128,7 @@ export function BackgroundElements() {
               ctx.moveTo(particle.x, particle.y);
               ctx.lineTo(otherParticle.x, otherParticle.y);
               ctx.strokeStyle = `rgba(16, 185, 129, ${connectionOpacity})`;
-              ctx.lineWidth = 0.8;
+              ctx.lineWidth = 1.5; // thicker lines
               ctx.stroke();
             }
           }
