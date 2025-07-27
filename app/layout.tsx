@@ -4,7 +4,6 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Favicon from "../components/Favicon";
 
 export const metadata: Metadata = {
   title: "Koral Kulacoglu",
@@ -22,12 +21,10 @@ html {
   font-family: ${GeistSans.style.fontFamily};
   --font-sans: ${GeistSans.variable};
   --font-mono: ${GeistMono.variable};
-  --kk-favicon-bg: #1e293b;
 }
         `}</style>
       </head>
       <body>
-        <Favicon />
         {children}
         <Analytics />
         <SpeedInsights />
