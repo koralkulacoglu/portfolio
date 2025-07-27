@@ -77,9 +77,9 @@ html {
 }
 
 .animate-gradient-text {
-  background: linear-gradient(-45deg, #10b981, #14b8a6, #06d6a0, #10b981);
-  background-size: 300% 300%;
-  animation: gradient 4s ease infinite;
+  background: linear-gradient(90deg, #10b981 0%, #06b6d4 30%, #2dd4bf 60%, #14b8a6 100%);
+  background-size: 400% 400%;
+  animation: gradient 4s ease-in-out infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
