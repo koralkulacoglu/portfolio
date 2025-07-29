@@ -5,15 +5,15 @@ import { AnimatedSection } from "@/components/animated-section";
 
 export function ExperienceSection() {
   const experiences = [
-    {
-      company: "BitGo",
-      role: "Software Engineering Intern",
-      location: "Palo Alto",
-      period: "Sep 2025 – Dec 2025",
-      description: "Incoming Fall 2025.",
-      highlights: [],
-      image: "/bitgo.jpg",
-    },
+    // {
+    //   company: "BitGo",
+    //   role: "Software Engineering Intern",
+    //   location: "Palo Alto",
+    //   period: "Sep 2025 – Dec 2025",
+    //   description: "Incoming Fall 2025.",
+    //   highlights: [],
+    //   image: "/bitgo.jpg",
+    // },
     {
       company: "AtoB",
       role: "Software Development Intern",
