@@ -59,6 +59,20 @@ export function ProjectsSection() {
       image: "/foursight.png",
     },
     {
+      title: "3D Octree Compression",
+      description:
+        "Developed a 3D object compression algorithm using octrees, achieving up to 99% memory reduction. Built a real-time OpenGL visualizer using MVC design pattern.",
+      technologies: ["C++", "OpenGL", "Computer Graphics"],
+      categories: ["Simulations & Algorithms"],
+      highlights: [
+        "99% memory reduction",
+        "Real-time visualization",
+        "MVC design pattern",
+      ],
+      github: "https://github.com/koralkulacoglu/3d-octree-compression",
+      image: "/3d-octree-compression.gif",
+    },
+    {
       title: "Admini",
       description:
         "Led a 5-person software team to develop a centralized government contracting platform. Built a fully responsive landing page and 10+ application pages using React with MUI and Tailwind CSS.",
@@ -83,18 +97,15 @@ export function ProjectsSection() {
       image: "/admini.png",
     },
     {
-      title: "3D Octree Compression",
+      title: "Autonomous Car",
       description:
-        "Developed a 3D object compression algorithm using octrees, achieving up to 99% memory reduction. Built a real-time OpenGL visualizer using MVC design pattern.",
-      technologies: ["C++", "OpenGL", "Computer Graphics"],
-      categories: ["Simulations & Algorithms"],
-      highlights: [
-        "99% memory reduction",
-        "Real-time visualization",
-        "MVC design pattern",
-      ],
-      github: "https://github.com/koralkulacoglu/3d-octree-compression",
-      image: "/3d-octree-compression.gif",
+        "Built a real-time lane detection system with OpenCV canny edge detection and hough transforms. Overlayed vehicle and traffic sign tracking using YOLOv4-tiny.",
+      technologies: ["Python", "OpenCV", "NumPy", "YOLOv4-tiny"],
+      categories: ["Computer Vision"],
+      highlights: ["Real-time detection", "Lane detection", "Object tracking"],
+      github: "https://github.com/koralkulacoglu/AutonomousCar",
+      demo: "https://www.youtube.com/watch?v=I9cR4of2jlo&list=PL4iMkUwfSFa3LzvXLPlDLKk0EshU3x4gV",
+      image: "/autonomous-car.gif",
     },
     {
       title: "SentiTrader",
@@ -109,17 +120,6 @@ export function ProjectsSection() {
       ],
       github: "https://github.com/koralkulacoglu/SentiTrader",
       image: "/sentitrader.png",
-    },
-    {
-      title: "Autonomous Car",
-      description:
-        "Built a real-time lane detection system with OpenCV canny edge detection and hough transforms. Overlayed vehicle and traffic sign tracking using YOLOv4-tiny.",
-      technologies: ["Python", "OpenCV", "NumPy", "YOLOv4-tiny"],
-      categories: ["Computer Vision"],
-      highlights: ["Real-time detection", "Lane detection", "Object tracking"],
-      github: "https://github.com/koralkulacoglu/AutonomousCar",
-      demo: "https://www.youtube.com/watch?v=I9cR4of2jlo&list=PL4iMkUwfSFa3LzvXLPlDLKk0EshU3x4gV",
-      image: "/autonomous-car.gif",
     },
     {
       title: "AirBoard",
