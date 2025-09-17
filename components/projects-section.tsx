@@ -14,6 +14,26 @@ export function ProjectsSection() {
 
   const projects = [
     {
+      title: "Sematic",
+      description:
+        "Collaborative whiteboard that turns voice, text, and images into structured diagrams in real-time. Powered by Gemini 2.0 Flash and AWS Amplify Gen 2 for spatially-aware, multimodal collaboration.",
+      technologies: [
+        "Gemini 2.0 Flash",
+        "AWS Amplify Gen 2",
+        "DynamoDB",
+        "Cognito",
+        "Lambda",
+        "React Flow",
+      ],
+      categories: ["Full-Stack", "AI Systems", "Computer Vision"],
+      highlights: [
+        "AWS Campus Champions: Best Use of DynamoDB Streams @ Hack the North",
+      ],
+      github: "https://github.com/koralkulacoglu/sematic",
+      demo: "https://sematic.ca",
+      image: "/sematic.png",
+    },
+    {
       title: "FourSight",
       description:
         "Built a 95% accurate neural network to classify 12 types of cancer from microarray samples. Won the Canada-Wide Science Fair and represented Canada at the EU Contest for Young Scientists (2nd place).",
