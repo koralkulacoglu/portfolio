@@ -16,7 +16,7 @@ export function ProjectsSection() {
     {
       title: "Sematic",
       description:
-        "Collaborative whiteboard that turns voice, text, and images into structured diagrams in real-time. Powered by Gemini 2.0 Flash and AWS Amplify Gen 2 for spatially-aware, multimodal collaboration.",
+        "Collaborative whiteboard that turns voice and video into structured diagrams in real-time. Powered by Gemini 2.0 Flash and AWS Amplify Gen 2 for spatially-aware, multimodal collaboration.",
       technologies: [
         "Gemini 2.0 Flash",
         "AWS Amplify Gen 2",
@@ -31,7 +31,45 @@ export function ProjectsSection() {
       ],
       github: "https://github.com/koralkulacoglu/sematic",
       demo: "https://sematic.ca",
-      image: "/sematic.png",
+      image: "/sematic.gif",
+    },
+    {
+      title: "Admini",
+      description:
+        "Led a 5-person software team to develop a centralized government contracting platform. Built a fully responsive landing page and 10+ application pages using React with MUI and Tailwind CSS.",
+      technologies: [
+        "AWS",
+        "EC2",
+        "DynamoDB",
+        "S3",
+        "React",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+      ],
+      categories: ["Full-Stack"],
+      highlights: [
+        "5-person team lead",
+        "Centralized platform",
+        "AWS infrastructure",
+      ],
+      github: "https://github.com/admini-ca",
+      demo: "https://admini.ca",
+      image: "/admini.png",
+    },
+    {
+      title: "3D Octree Compression",
+      description:
+        "Developed a 3D object compression algorithm using octrees, achieving up to 99% memory reduction. Built a real-time OpenGL visualizer using MVC design pattern.",
+      technologies: ["C++", "OpenGL", "Computer Graphics"],
+      categories: ["Simulations & Algorithms"],
+      highlights: [
+        "99% memory reduction",
+        "Real-time visualization",
+        "MVC design pattern",
+      ],
+      github: "https://github.com/koralkulacoglu/3d-octree-compression",
+      image: "/3d-octree-compression.gif",
     },
     {
       title: "FourSight",
@@ -57,44 +95,6 @@ export function ProjectsSection() {
       github: "https://github.com/redmac135/foursight",
       demo: "https://partner.projectboard.world/ysc/project/foursight-analysis-of-cancerous-genetic-profiles-with-artificial-neural-networks",
       image: "/foursight.png",
-    },
-    {
-      title: "3D Octree Compression",
-      description:
-        "Developed a 3D object compression algorithm using octrees, achieving up to 99% memory reduction. Built a real-time OpenGL visualizer using MVC design pattern.",
-      technologies: ["C++", "OpenGL", "Computer Graphics"],
-      categories: ["Simulations & Algorithms"],
-      highlights: [
-        "99% memory reduction",
-        "Real-time visualization",
-        "MVC design pattern",
-      ],
-      github: "https://github.com/koralkulacoglu/3d-octree-compression",
-      image: "/3d-octree-compression.gif",
-    },
-    {
-      title: "Admini",
-      description:
-        "Led a 5-person software team to develop a centralized government contracting platform. Built a fully responsive landing page and 10+ application pages using React with MUI and Tailwind CSS.",
-      technologies: [
-        "AWS",
-        "EC2",
-        "DynamoDB",
-        "S3",
-        "React",
-        "Python",
-        "JavaScript",
-        "TypeScript",
-      ],
-      categories: ["Full-Stack"],
-      highlights: [
-        "5-person team lead",
-        "Centralized platform",
-        "AWS infrastructure",
-      ],
-      github: "https://github.com/admini-ca",
-      demo: "https://admini.ca",
-      image: "/admini.png",
     },
     {
       title: "Autonomous Car",
