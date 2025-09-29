@@ -25,7 +25,7 @@ export function HeroSection() {
             </h1>
             <p className="text-xl sm:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
               <span className="text-emerald-400">Software Engineer </span>
-              specializing in Data
+              specializing in AI
             </p>
           </div>
         </AnimatedSection>

@@ -10,8 +10,12 @@ export function ExperienceSection() {
       role: "Software Engineering Intern",
       location: "Palo Alto",
       period: "Sep 2025 – Dec 2025",
-      description: "Incoming Fall 2025.",
-      highlights: [],
+      description:
+        "Enhanced security infrastructure and hardened SDK for cryptocurrency custody platform.",
+      highlights: [
+        "Built Rust-based linter using Trustfall and GraphQL to enforce SHA pinning, protecting 320+ repositories",
+        "Improved BitGo SDK OpenSSF Scorecard from 5.4 to 7.5 by remediating npm vulnerabilities (XSS, DoS, credential leakage)",
+      ],
       image: "/bitgo.jpg",
     },
     {

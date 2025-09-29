@@ -58,7 +58,7 @@ export function AboutSection() {
                 My projects have generated significant value – from winning the
                 Canada-Wide Science Fair to working on systems that projected
                 $8M+ ARR. I love tackling complex problems at the intersection
-                of AI and software engineering.
+                of software engineering and AI.
               </p>
             </div>
           </AnimatedSection>
@@ -81,15 +81,13 @@ export function AboutSection() {
                 <div className="space-y-2">
                   <p className="font-medium">University of Waterloo</p>
                   <p className="text-slate-400">
-                    Bachelor's in Software Engineering
+                    Bachelor of Software Engineering
                   </p>
                   <p className="text-slate-400">
-                    3.7/4.0 GPA • Sep 2023 – Apr 2028
+                    3.9/4.0 GPA • Sep 2023 – Apr 2028
                   </p>
                   <p className="text-sm text-slate-500 mt-3">
-                    Coursework: Compilers, Databases, Data Structures &
-                    Algorithms, Object Oriented Design, Statistics, Linear
-                    Algebra, Calculus...
+                    AI Specialization
                   </p>
                 </div>
               </CardContent>
