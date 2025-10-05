@@ -295,28 +295,6 @@ export function ProjectsSection() {
       demo: "https://planets-eosin.vercel.app",
       image: "/planets.gif",
     },
-    {
-      title: "Portfolio Website",
-      description:
-        "This website! Built with Next.js, React, Tailwind CSS, Framer Motion, and TypeScript. Responsive, animated, and fully open source.",
-      technologies: [
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "Framer Motion",
-        "TypeScript",
-      ],
-      categories: ["Full-Stack"],
-      highlights: [
-        "Modern stack",
-        "Fully responsive",
-        "Animated UI",
-        "Open source",
-      ],
-      github: "https://github.com/koralkulacoglu/portfolio",
-      demo: "https://koralkulacoglu.com",
-      image: "/portfolio-website.png",
-    },
   ];
 
   const categories = [
