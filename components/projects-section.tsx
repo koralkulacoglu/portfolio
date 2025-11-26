@@ -14,6 +14,59 @@ export function ProjectsSection() {
 
   const projects = [
     {
+      title: "Smart Order Router",
+      description:
+        "A concurrent arbitrage trading engine written in Go that aggregates live order book data from multiple exchanges into a centralized Global Order Book to identify and execute profitable spread opportunities in real-time.",
+      technologies: ["Go", "Concurrency", "Order Books", "REST APIs"],
+      categories: ["Simulations & Algorithms"],
+      highlights: [
+        "Thread-safe order book",
+        "Real-time arbitrage execution",
+        "Live trading dashboard",
+      ],
+      github: "https://github.com/koralkulacoglu/smart-order-router",
+      image: "/smart-order-router.gif",
+    },
+    {
+      title: "3D Octree Compression",
+      description:
+        "Developed a 3D object compression algorithm using octrees, achieving up to 99% memory reduction. Built a real-time OpenGL visualizer using MVC design pattern.",
+      technologies: ["C++", "OpenGL", "Computer Graphics"],
+      categories: ["Simulations & Algorithms"],
+      highlights: [
+        "99% memory reduction",
+        "Real-time visualization",
+        "MVC design pattern",
+      ],
+      github: "https://github.com/koralkulacoglu/3d-octree-compression",
+      image: "/3d-octree-compression.gif",
+    },
+    {
+      title: "FourSight",
+      description:
+        "Built a 95% accurate neural network to classify 12 types of cancer from microarray samples. Won the Canada-Wide Science Fair and represented Canada at the EU Contest for Young Scientists (2nd place).",
+      technologies: [
+        "Python",
+        "JavaScript",
+        "TensorFlow",
+        "MatPlotLib",
+        "Django",
+        "Docker",
+        "Heroku",
+        "Pandas",
+      ],
+      categories: ["Full-Stack", "Machine Learning"],
+      highlights: [
+        "95% accuracy",
+        "Canada-Wide Science Fair Winner",
+        "$20K funding",
+        "Published to CSF Journal",
+      ],
+      github: "https://github.com/redmac135/foursight",
+      demo: "https://partner.projectboard.world/ysc/project/foursight-analysis-of-cancerous-genetic-profiles-with-artificial-neural-networks",
+      image: "/foursight.png",
+    },
+    {
       title: "Sematic",
       description:
         "Collaborative whiteboard that turns voice and video into structured diagrams in real-time. Powered by Gemini 2.0 Flash and AWS Amplify Gen 2 for spatially-aware, multimodal collaboration.",
@@ -56,45 +109,6 @@ export function ProjectsSection() {
       github: "https://github.com/admini-ca",
       demo: "https://admini.ca",
       image: "/admini.png",
-    },
-    {
-      title: "3D Octree Compression",
-      description:
-        "Developed a 3D object compression algorithm using octrees, achieving up to 99% memory reduction. Built a real-time OpenGL visualizer using MVC design pattern.",
-      technologies: ["C++", "OpenGL", "Computer Graphics"],
-      categories: ["Simulations & Algorithms"],
-      highlights: [
-        "99% memory reduction",
-        "Real-time visualization",
-        "MVC design pattern",
-      ],
-      github: "https://github.com/koralkulacoglu/3d-octree-compression",
-      image: "/3d-octree-compression.gif",
-    },
-    {
-      title: "FourSight",
-      description:
-        "Built a 95% accurate neural network to classify 12 types of cancer from microarray samples. Won the Canada-Wide Science Fair and represented Canada at the EU Contest for Young Scientists (2nd place).",
-      technologies: [
-        "Python",
-        "JavaScript",
-        "TensorFlow",
-        "MatPlotLib",
-        "Django",
-        "Docker",
-        "Heroku",
-        "Pandas",
-      ],
-      categories: ["Full-Stack", "Machine Learning"],
-      highlights: [
-        "95% accuracy",
-        "Canada-Wide Science Fair Winner",
-        "$20K funding",
-        "Published to CSF Journal",
-      ],
-      github: "https://github.com/redmac135/foursight",
-      demo: "https://partner.projectboard.world/ysc/project/foursight-analysis-of-cancerous-genetic-profiles-with-artificial-neural-networks",
-      image: "/foursight.png",
     },
     {
       title: "Autonomous Car",
@@ -279,21 +293,6 @@ export function ProjectsSection() {
       ],
       github: "https://github.com/koralkulacoglu/CompetitiveProgramming",
       image: "/competitive-programming.jpg",
-    },
-    {
-      title: "Planets",
-      description:
-        "A partial 3D solar system simulation built in 1 day. Uses ForceGraph3D for orbital mechanics and Three.js for realistic texture maps. Fully interactive 3D environment.",
-      technologies: ["React", "Three.js", "WebGL", "JavaScript"],
-      categories: ["Simulations & Algorithms"],
-      highlights: [
-        "Built in 1 day",
-        "3D orbital mechanics",
-        "Interactive exploration",
-      ],
-      github: "https://github.com/koralkulacoglu/planets",
-      demo: "https://planets-eosin.vercel.app",
-      image: "/planets.gif",
     },
   ];
 
