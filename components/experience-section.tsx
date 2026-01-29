@@ -6,6 +6,15 @@ import { AnimatedSection } from "@/components/animated-section";
 export function ExperienceSection() {
   const experiences = [
     {
+      company: "Coinbase",
+      role: "Software Engineering Intern",
+      location: "San Francisco",
+      period: "Incoming 2026",
+      description: "Incoming Summer 2026 on the Institutional Team.",
+      highlights: [],
+      image: "/coinbase.png",
+    },
+    {
       company: "BitGo",
       role: "Software Engineering Intern",
       location: "Palo Alto",

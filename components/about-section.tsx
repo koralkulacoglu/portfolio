@@ -6,13 +6,14 @@ import { AnimatedSection } from "@/components/animated-section";
 
 export function AboutSection() {
   const languages = [
-    "Python",
     "C/C++",
+    "Python",
+    "Rust",
+    "Go",
     "Ruby",
-    "JavaScript",
-    "TypeScript",
-    "SQL",
     "Java",
+    "JavaScript",
+    "SQL",
     "Assembly",
   ];
 
@@ -28,11 +29,11 @@ export function AboutSection() {
   ];
 
   const interests = [
+    "Competitive Programming",
+    "Quant Finance",
     "Chess",
     "Poker",
     "Table Tennis",
-    "Competitive Programming",
-    "CTFs",
   ];
 
   return (
@@ -48,17 +49,16 @@ export function AboutSection() {
           <AnimatedSection animation="slideLeft" delay={200}>
             <div>
               <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                I'm a Software Engineering student at the University of Waterloo
-                with a passion for building innovative solutions that make a
-                real impact. With experience at companies like BitGo, AtoB, and
-                D2L, I've worked on everything from AI-powered GTM systems to
-                multi-agent frameworks.
+                Welcome to my website! I'm a Software Engineering student at the
+                University of Waterloo focused on high-performance systems and
+                financial technology. Currently, I'm an incoming SWE Intern at
+                Coinbase on the Institutional Team, with previous experience
+                building backend systems at BitGo and AtoB.
               </p>
               <p className="text-lg text-slate-300 leading-relaxed">
-                My projects have generated significant value – from winning the
-                Canada-Wide Science Fair to working on systems that projected
-                $8M+ ARR. I love tackling complex problems at the intersection
-                of software engineering and AI.
+                My technical focus is on systems programming and financial
+                technology. I am deeply interested in competitive programming,
+                distributed systems, and low-latency infrastructure.
               </p>
             </div>
           </AnimatedSection>
@@ -81,13 +81,19 @@ export function AboutSection() {
                 <div className="space-y-2">
                   <p className="font-medium">University of Waterloo</p>
                   <p className="text-slate-400">
-                    Bachelor of Software Engineering
+                    Bachelor of Software Engineering (AI Specialization)
                   </p>
                   <p className="text-slate-400">
-                    3.9/4.0 GPA • Sep 2023 – Apr 2028
+                    3.7/4.0 GPA • Sep 2023 – Apr 2028
                   </p>
                   <p className="text-sm text-slate-500 mt-3">
-                    AI Specialization
+                    Math: Combinatorics & Optimization, Signals & Systems,
+                    Numerical Computation, Statistics, Linear Algebra, Calculus
+                  </p>
+                  <p className="text-sm text-slate-500 mt-3">
+                    Computers: Advanced Algorithms, Operating Systems, Database
+                    Systems, Compilers, Software Design & Testing, User
+                    Interfaces
                   </p>
                 </div>
               </CardContent>
