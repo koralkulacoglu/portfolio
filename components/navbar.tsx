@@ -75,7 +75,7 @@ export function Navbar() {
               className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 transition-all duration-300 transform hover:scale-105"
             >
               <a
-                href="https://drive.google.com/file/d/1YZtAim8SWVnaKD_BY1VePsYPQPvxk8Bj"
+                href="/Koral_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -129,7 +129,7 @@ export function Navbar() {
                 Contact
               </button>
               <a
-                href="https://drive.google.com/file/d/1YZtAim8SWVnaKD_BY1VePsYPQPvxk8Bj"
+                href="/Koral_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block px-3 py-2 text-slate-300 hover:text-emerald-400 transition-colors w-full text-left"

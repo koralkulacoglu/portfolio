@@ -44,7 +44,7 @@ export function HeroSection() {
               className="border-emerald-400 text-emerald-400 hover:bg-emerald-400 hover:text-slate-950 px-8 py-3 text-lg"
             >
               <a
-                href="https://drive.google.com/file/d/1YZtAim8SWVnaKD_BY1VePsYPQPvxk8Bj"
+                href="/Koral_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
