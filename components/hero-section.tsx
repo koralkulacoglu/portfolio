@@ -36,7 +36,7 @@ export function HeroSection() {
               onClick={() => scrollToSection("projects")}
               className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 text-lg"
             >
-              View My Work
+              View My Projects
             </Button>
             <Button
               asChild
