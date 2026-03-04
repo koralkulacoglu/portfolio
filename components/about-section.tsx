@@ -49,16 +49,18 @@ export function AboutSection() {
           <AnimatedSection animation="slideLeft" delay={200}>
             <div>
               <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                Welcome to my website! I'm a Software Engineering student at the
-                University of Waterloo focused on high-performance systems and
-                financial technology. Currently, I'm an incoming SWE Intern at
-                Coinbase on the Institutional Team, with previous experience
-                building backend systems at BitGo and AtoB.
+                Welcome to my website!
+              </p>
+              <p className="text-lg text-slate-300 leading-relaxed mb-6">
+                I'm a Software Engineering student at the University of Waterloo
+                focused on low-latency systems and financial technology.
               </p>
               <p className="text-lg text-slate-300 leading-relaxed">
-                My technical focus is on systems programming and financial
-                technology. I am deeply interested in competitive programming,
-                distributed systems, and low-latency infrastructure.
+                Currently, I am joining Coinbase as a SWE Intern on their
+                Institutional Team where I hope to learn more about crypto
+                exchanges. Outside work, I am deeply interested in competitive
+                programming, concurreny, compilers, operating systems, and
+                machine learning.
               </p>
             </div>
           </AnimatedSection>
