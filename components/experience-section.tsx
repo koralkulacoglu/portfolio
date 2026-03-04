@@ -7,52 +7,37 @@ export function ExperienceSection() {
   const experiences = [
     {
       company: "Coinbase",
-      role: "Software Engineering Intern",
+      role: "Software Engineer Intern",
       location: "San Francisco",
-      period: "Incoming 2026",
-      description: "Incoming Summer 2026 on the Institutional Team.",
-      highlights: [],
+      period: "May 2026 – Aug 2026",
+      description: "Incoming Summer 2026 on Institutional Team.",
       image: "/coinbase.png",
     },
     {
       company: "BitGo",
-      role: "Software Engineering Intern",
+      role: "Software Engineer Intern",
       location: "Palo Alto",
       period: "Sep 2025 – Dec 2025",
       description:
-        "Enhanced security infrastructure and hardened SDK for cryptocurrency custody platform.",
-      highlights: [
-        "Built Rust-based linter using Trustfall and GraphQL to enforce SHA pinning, protecting 320+ repositories",
-        "Improved BitGo SDK OpenSSF Scorecard from 5.4 to 7.5 by remediating npm vulnerabilities (XSS, DoS, credential leakage)",
-      ],
+        "Built security tools and optimized static analysis systems for cryptocurrency custody platform.",
       image: "/bitgo.jpg",
     },
     {
       company: "AtoB",
-      role: "Software Development Intern",
+      role: "Software Engineer Intern",
       location: "San Francisco",
-      period: "Jan 2025 – May 2025",
+      period: "Jan 2025 – Apr 2025",
       description:
-        "Built AI-powered systems for lead scoring and customer matching, creating significant business value.",
-      highlights: [
-        "Built ML lead scorer and autoencoder for customer matching, boosting sales ROI ($8M+ ARR projected)",
-        "Created data pipelines: UTM tracking (500K+ events/month) and UCC-1 web scraper ($150K+ data)",
-        "Developed semantic matching for user-uploaded fuel statements to SQL relations",
-      ],
+        "Created data pipelines and semantic matching algorithms for lead generation and fuel statement analysis.",
       image: "/atob.jpg",
     },
     {
       company: "D2L",
-      role: "Software Development Intern",
+      role: "Software Engineer Intern",
       location: "Toronto",
-      period: "May 2024 – Sep 2024",
+      period: "May 2024 – Aug 2024",
       description:
-        "Developed AI-powered educational tools and multi-agent systems for automated course QA.",
-      highlights: [
-        "Built multi-agent framework for automated course QA using AWS Step Functions and Lambda",
-        "Created Brightspace tool for FAISS knowledge graphs and semantic course search",
-        "Designed custom RAG models for AI tutoring, integrated with React UI",
-      ],
+        "Built multi-agent frameworks and knowledge graph tools for educational automation and semantic search.",
       image: "/d2l.png",
     },
   ];
@@ -113,22 +98,7 @@ export function ExperienceSection() {
                     </div>
                   </div>
 
-                  <p className="text-slate-300 mb-6 text-lg">
-                    {exp.description}
-                  </p>
-
-                  {exp.highlights.length > 0 && (
-                    <ul className="space-y-3">
-                      {exp.highlights.map((highlight, idx) => (
-                        <li key={idx} className="flex items-start group">
-                          <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2 mr-3 flex-shrink-0 transition-all duration-300 group-hover:bg-emerald-300 group-hover:scale-125"></div>
-                          <p className="text-slate-300 transition-colors duration-300 group-hover:text-slate-200">
-                            {highlight}
-                          </p>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  <p className="text-slate-300 text-lg">{exp.description}</p>
                 </CardContent>
               </Card>
             </AnimatedSection>
