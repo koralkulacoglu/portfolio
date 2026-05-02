@@ -10,7 +10,7 @@ export function ExperienceSection() {
       role: "Software Engineer Intern",
       location: "San Francisco",
       period: "May 2026 – Aug 2026",
-      description: "Incoming summer 2026 on the Institutional Team.",
+      description: "Incoming summer 2026 on the Institutional Financing Team.",
       image: "/coinbase.png",
     },
     {
