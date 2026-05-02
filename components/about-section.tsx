@@ -86,7 +86,7 @@ export function AboutSection() {
                     Bachelor of Software Engineering (AI Specialization)
                   </p>
                   <p className="text-slate-400">
-                    3.7/4.0 GPA • Sep 2023 – Apr 2028
+                    3.8/4.0 GPA • Sep 2023 – Apr 2028
                   </p>
                   <p className="text-sm text-slate-500 mt-3">
                     Math: Combinatorics & Optimization, Signals & Systems,
