@@ -14,6 +14,20 @@ export function ProjectsSection() {
 
   const projects = [
     {
+      title: "FIX Exchange",
+      description:
+        "An equity exchange written in C++. Clients connect over TCP using the FIX 4.2 protocol. Includes a price-time priority matching engine, UDP multicast market data, and a browser-based trading UI.",
+      technologies: ["C++", "Python", "Concurrency", "TCP/UDP", "FIX 4.2"],
+      categories: ["Simulations & Algorithms"],
+      highlights: [
+        "Price-time priority matching",
+        "Multicast market data feed",
+        "Multithreaded architecture",
+      ],
+      github: "https://github.com/koralkulacoglu/fix-exchange",
+      image: "/fix-exchange.png",
+    },
+    {
       title: "Smart Order Router",
       description:
         "A concurrent arbitrage trading engine written in Go that aggregates live order book data from multiple exchanges into a centralized Global Order Book to identify and execute profitable spread opportunities in real-time.",
@@ -27,6 +41,7 @@ export function ProjectsSection() {
       github: "https://github.com/koralkulacoglu/smart-order-router",
       image: "/smart-order-router.gif",
     },
+
     {
       title: "3D Octree Compression",
       description:
