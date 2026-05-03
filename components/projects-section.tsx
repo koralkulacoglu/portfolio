@@ -16,13 +16,13 @@ export function ProjectsSection() {
     {
       title: "FIX Exchange",
       description:
-        "An equity exchange written in C++. Clients connect over TCP using the FIX 4.2 protocol. Includes a price-time priority matching engine, UDP multicast market data, and a browser-based trading UI.",
-      technologies: ["C++", "Python", "Concurrency", "TCP/UDP", "FIX 4.2"],
+        "Equity exchange written in C++. Clients connect over TCP using FIX 4.2 protocol. Includes a price-time priority matching engine, UDP multicast market data, and SQLite event log and order book persistence for crash recovery.",
+      technologies: ["C++", "Python", "TCP/UDP", "SQLite", "FIX 4.2"],
       categories: ["Simulations & Algorithms"],
       highlights: [
         "Price-time priority matching",
         "Multicast market data feed",
-        "Multithreaded architecture",
+        "SQLite-backed crash recovery",
       ],
       github: "https://github.com/koralkulacoglu/fix-exchange",
       image: "/fix-exchange.png",
