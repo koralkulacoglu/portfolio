@@ -18,7 +18,7 @@ export function ProjectsSection() {
       description:
         "Equity exchange written in C++. Clients connect over TCP using FIX 4.2 protocol. Includes a price-time priority matching engine, UDP multicast market data, and SQLite event log and order book persistence for crash recovery.",
       technologies: ["C++", "Python", "TCP/UDP", "SQLite", "FIX 4.2"],
-      categories: ["Simulations & Algorithms"],
+      categories: ["Full-Stack", "Simulations & Algorithms"],
       highlights: [
         "Price-time priority matching",
         "Multicast market data feed",
