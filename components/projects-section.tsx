@@ -16,8 +16,8 @@ export function ProjectsSection() {
     {
       title: "FIX Exchange",
       description:
-        "C++ equity exchange running on AWS bare-metal 128-core Intel Ice Lake. Clients connect over TCP using FIX 4.2 protocol. Includes a price-time priority matching engine, UDP multicast market data, and SQLite event log and order book persistence for crash recovery.",
-      technologies: ["C++", "Python", "TCP/UDP", "SQLite", "FIX 4.2"],
+        "C++ equity exchange running on AWS EC2 c6i.metal. Clients connect over TCP using FIX 4.2. Includes a price-time priority matching engine, UDP multicast market data, and SQLite event log & book persistence for crash recovery.",
+      technologies: ["C++", "Python", "TCP/UDP", "SQLite", "AWS", "FIX 4.2"],
       categories: ["Full-Stack", "Simulations & Algorithms"],
       highlights: [
         "28K+ ops/sec",
