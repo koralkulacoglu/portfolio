@@ -29,20 +29,15 @@ export function ProjectsSection() {
       image: "/fix-exchange.png",
     },
     {
-      title: "Smart Order Router",
+      title: "Macro Placement Challenge",
       description:
-        "A concurrent arbitrage trading engine written in Go that aggregates live order book data from multiple exchanges into a centralized Global Order Book to identify and execute profitable spread opportunities in real-time.",
-      technologies: ["Go", "Concurrency", "Order Books", "REST APIs"],
-      categories: ["Simulations & Algorithms"],
-      highlights: [
-        "Thread-safe order book",
-        "Real-time arbitrage execution",
-        "Live trading dashboard",
-      ],
-      github: "https://github.com/koralkulacoglu/smart-order-router",
-      image: "/smart-order-router.gif",
+        "Analytical macro placer built for the Partcl/HRT chip placement competition. Beat the RePlAce baseline by 30% on proxy cost. Multi-phase pipeline: electrostatic GP → soft-only Adam → numerical subgradient → Lin-Kernighan k-opt → hierarchical + global LAHC.",
+      technologies: ["Python", "PyTorch", "NumPy", "Adam", "LAHC"],
+      categories: ["Simulations & Algorithms", "Machine Learning"],
+      highlights: ["1.02 proxy cost", "2000x speedup via FastEvaluator"],
+      github: "https://github.com/koralkulacoglu/macro-place-challenge-2026",
+      image: "/macro_place_challenge.gif",
     },
-
     {
       title: "3D Octree Compression",
       description:
@@ -56,6 +51,20 @@ export function ProjectsSection() {
       ],
       github: "https://github.com/koralkulacoglu/3d-octree-compression",
       image: "/3d-octree-compression.gif",
+    },
+    {
+      title: "Smart Order Router",
+      description:
+        "A concurrent arbitrage trading engine written in Go that aggregates live order book data from multiple exchanges into a centralized Global Order Book to identify and execute profitable spread opportunities in real-time.",
+      technologies: ["Go", "Concurrency", "Order Books", "REST APIs"],
+      categories: ["Simulations & Algorithms"],
+      highlights: [
+        "Thread-safe order book",
+        "Real-time arbitrage execution",
+        "Live trading dashboard",
+      ],
+      github: "https://github.com/koralkulacoglu/smart-order-router",
+      image: "/smart-order-router.gif",
     },
     {
       title: "FourSight",
