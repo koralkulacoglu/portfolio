@@ -31,6 +31,7 @@ type Status = "loading" | "watch" | "play" | "wrong" | "solved" | "revealed";
 type LogEntry = { san: string; white: boolean; num: number };
 
 const STORE = "solved-puzzles";
+const CURRENT = "current-puzzle";
 
 const pieces: PieceRenderObject = Object.fromEntries(
   Object.entries(defaultPieces).map(([key, render]) => [
@@ -135,15 +136,24 @@ export function Puzzle() {
         const done = readSolved();
         setSolved(done);
         setPuzzles(data);
-        const first = data.findIndex((d) => !done.includes(d.id));
-        setIdx(first === -1 ? 0 : first);
+        let current = -1;
+        try {
+          const id = localStorage.getItem(CURRENT);
+          current = data.findIndex((d) => d.id === id);
+        } catch {}
+        if (current === -1) current = data.findIndex((d) => !done.includes(d.id));
+        setIdx(current === -1 ? 0 : current);
       })
       .catch(() => setStatus("loading"));
     return () => timers.current.forEach(clearTimeout);
   }, []);
 
   useEffect(() => {
-    if (p) load(p);
+    if (!p) return;
+    load(p);
+    try {
+      localStorage.setItem(CURRENT, p.id);
+    } catch {}
   }, [p, load]);
 
   const markSolved = (id: string) => {
