@@ -14,9 +14,8 @@ function Label({ children }: { children: React.ReactNode }) {
 function Footer({ className }: { className: string }) {
   return (
     <footer
-      className={`flex-wrap items-center justify-between gap-6 border-t border-rule pt-5 font-mono text-[12px] text-faint ${className}`}
+      className={`items-center justify-end border-t border-rule pt-5 font-mono text-[12px] text-faint ${className}`}
     >
-      <span>Toronto · {new Date().getFullYear()}</span>
       <Webring />
     </footer>
   );
