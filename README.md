@@ -1,12 +1,19 @@
 # Portfolio
 
-Personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion.
-
-## Getting Started
+Personal site. Next.js, Tailwind, and a chess puzzle widget built on chess.js and react-chessboard.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+## Puzzles
+
+`public/puzzles.json` is generated from [chess-puzzle-maker](https://github.com/koralkulacoglu/chess-puzzle-maker). To refresh it, run the pipeline there, then:
+
+```bash
+npm run puzzles            # reads ../chess-puzzle-maker/out/puzzles.json
+npm run puzzles -- <path>  # or any other export
+```
+
+The sync script keeps only what the widget needs; player names and game links are dropped.
