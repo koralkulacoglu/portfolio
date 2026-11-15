@@ -18,9 +18,11 @@ export default function Home() {
         <h1 className="text-[2.6rem] leading-none tracking-[-0.01em] sm:text-5xl">
           Koral Kulacoglu
         </h1>
+        <p className="mt-4 font-mono text-[13px] text-faint">
+          Software Engineering · University of Waterloo
+        </p>
         <p className="mt-6 max-w-[34rem] text-[1.2rem] leading-relaxed text-muted">
-          I study software engineering at Waterloo and like systems
-          programming and chess.
+          I like systems programming and chess.
         </p>
         <nav className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[13px]">
           {links.map((l) => (
