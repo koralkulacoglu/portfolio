@@ -24,7 +24,8 @@ function Footer({ className }: { className: string }) {
 
 export default function Home() {
   return (
-    <div className="mx-auto grid max-w-[1120px] grid-cols-[minmax(0,1fr)] gap-x-12 gap-y-12 px-5 pt-14 pb-12 sm:px-8 sm:pt-16 lg:gap-y-8 lg:pt-12 lg:pb-8 lg:grid-cols-[minmax(0,1fr)_380px]">
+    <main className="lg:flex lg:min-h-dvh lg:items-center">
+    <div className="mx-auto grid w-full max-w-[1120px] grid-cols-[minmax(0,1fr)] gap-x-12 gap-y-12 px-5 pt-14 pb-12 sm:px-8 sm:pt-16 lg:gap-y-8 lg:py-10 lg:grid-cols-[minmax(0,1fr)_380px]">
       <header className="lg:col-start-1">
         <h1 className="text-[2.6rem] leading-none tracking-[-0.01em] sm:text-5xl">
           Koral Kulacoglu
@@ -51,7 +52,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <aside className="lg:sticky lg:top-12 lg:col-start-2 lg:row-span-3 lg:row-start-1 lg:self-start lg:pt-2">
+      <aside className="lg:sticky lg:top-10 lg:col-start-2 lg:row-span-3 lg:row-start-1 lg:self-start lg:pt-2">
         <Puzzle />
         <Footer className="mt-10 hidden lg:flex" />
       </aside>
@@ -93,5 +94,6 @@ export default function Home() {
 
       <Footer className="flex lg:hidden" />
     </div>
+    </main>
   );
 }
