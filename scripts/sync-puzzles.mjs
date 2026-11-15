@@ -22,6 +22,7 @@ const slim = puzzles.map((p) => ({
   opp: p.game.opponent.rating,
   result: p.game.result,
   end: p.game.termination,
+  clock: p.game.clock?.secondsLeft ?? null,
 }));
 
 writeFileSync("public/puzzles.json", JSON.stringify(slim));
