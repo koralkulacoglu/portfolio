@@ -33,7 +33,7 @@ export default function Home() {
           Software Engineering · University of Waterloo
         </p>
         <p className="mt-4 max-w-[34rem] text-[1.2rem] leading-relaxed text-muted">
-          I like systems programming and chess.
+          I like systems programming and chess
         </p>
         <nav className="mt-4 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[13px]">
           {links.map((l) => (
