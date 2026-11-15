@@ -22,7 +22,7 @@ export default async function AppleIcon() {
           paddingTop: 10,
         }}
       >
-        K
+        <div style={{ display: "flex", transform: "translate(-3px, 12px)" }}>K</div>
       </div>
     ),
     { ...size, fonts: await fonts() },

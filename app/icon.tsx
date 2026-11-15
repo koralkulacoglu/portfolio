@@ -28,7 +28,10 @@ export default async function Icon({ id }: { id: Promise<string> }) {
           paddingTop: s * 0.06,
         }}
       >
-        K
+        {/* optical centring: the line box leaves room for descenders a capital K doesn't use */}
+        <div style={{ display: "flex", transform: `translate(${s <= 32 ? 0 : -s * 0.019}px, ${s * (s <= 32 ? 0.08 : 0.068)}px)` }}>
+          K
+        </div>
       </div>
     ),
     // thin serifs vanish at tab size, so the small one is heavier
