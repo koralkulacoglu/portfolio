@@ -331,11 +331,11 @@ export function Puzzle() {
       prompt =
         idx === 0 ? (
           <>
-            I{" "}
+            I wrote{" "}
             <Link href="/projects/chess-puzzle-maker" className="link">
-              turned my games into puzzles
-            </Link>
-            . Can you find {goal} as {p.color}?
+              a script
+            </Link>{" "}
+            that turns my games into puzzles. Can you find {goal} as {p.color}?
           </>
         ) : (
           `${side} to play. ${did}`
