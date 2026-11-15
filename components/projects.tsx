@@ -52,7 +52,7 @@ export function Projects() {
         <span aria-hidden className="text-faint transition-colors group-hover:text-accent">
           {all ? "−" : "+"}
         </span>
-        <span>{all ? "show fewer" : "more projects"}</span>
+        <span>{all ? "show fewer" : "more projects…"}</span>
       </button>
     </>
   );
