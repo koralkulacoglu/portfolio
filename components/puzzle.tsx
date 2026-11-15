@@ -25,6 +25,7 @@ type PuzzleData = {
   opp: number;
   result: "win" | "loss" | "draw";
   end: string;
+  clock: number | null;
 };
 
 type Status = "loading" | "watch" | "play" | "wrong" | "solved" | "revealed";
@@ -59,8 +60,44 @@ function parseUci(uci: string) {
   };
 }
 
+function formatClock(sec: number) {
+  if (sec < 20) return `0:${sec.toFixed(1).padStart(4, "0")}`;
+  const s = Math.floor(sec);
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const ss = String(s % 60).padStart(2, "0");
+  return h ? `${h}:${String(m).padStart(2, "0")}:${ss}` : `${m}:${ss}`;
+}
+
+function PlayerBar({
+  name,
+  rating,
+  color,
+  right,
+}: {
+  name: string;
+  rating?: number;
+  color?: "white" | "black";
+  right?: React.ReactNode;
+}) {
+  return (
+    <div className="flex h-8 items-center justify-between font-mono text-[12px]">
+      <span className="flex items-center gap-2">
+        <span
+          aria-hidden
+          className="size-2.5 rounded-full border border-faint"
+          style={{ background: color === "white" ? "var(--pc-white)" : "var(--pc-black)" }}
+        />
+        <span className="text-ink">{name}</span>
+        {rating && <span className="text-faint">{rating}</span>}
+      </span>
+      {right}
+    </div>
+  );
+}
+
 function aftermath(p: PuzzleData) {
-  if (p.found) return "I found it in the game too.";
+  if (p.found) return "I found it in the game.";
   const tail =
     p.result === "win"
       ? " and won anyway"
@@ -298,7 +335,9 @@ export function Puzzle() {
   return (
     <div>
       <div className="mb-4 flex items-baseline justify-between font-mono text-[11px] uppercase tracking-[0.14em] text-faint">
-        <h2>Puzzle {p ? `${idx + 1} / ${puzzles!.length}` : ""}</h2>
+        <h2>
+          From my games{p && <span className="ml-3 tracking-normal">{idx + 1} / {puzzles!.length}</span>}
+        </h2>
         <div className="flex gap-1 normal-case tracking-normal">
           <button onClick={() => go(-1)} className="px-1.5 text-[14px] hover:text-accent" aria-label="Previous puzzle">
             ←
@@ -308,6 +347,13 @@ export function Puzzle() {
           </button>
         </div>
       </div>
+
+      <PlayerBar
+        name="Opponent"
+        rating={p?.opp}
+        color={p ? (p.color === "white" ? "black" : "white") : undefined}
+        right={p && <span className="text-faint">{p.speed} · {month}</span>}
+      />
 
       <div className={`overflow-hidden rounded-[3px] border border-rule ${status === "wrong" ? "nudge" : ""}`}>
         <Chessboard
@@ -355,16 +401,38 @@ export function Puzzle() {
         />
       </div>
 
-      <p className="mt-4 min-h-[1.6em] text-[1.15rem]">{prompt}</p>
+      <PlayerBar
+        name="Koral"
+        rating={p?.me}
+        color={p?.color}
+        right={
+          p?.clock != null && (
+            <span
+              className={`rounded-[3px] border px-1.5 py-px tabular-nums ${
+                p.clock < 10 ? "border-accent text-accent" : "border-rule text-muted"
+              }`}
+              title="My clock at this moment"
+            >
+              {formatClock(p.clock)}
+            </span>
+          )
+        }
+      />
 
-      <p className="mt-1 min-h-[1.5em] font-mono text-[12px] leading-relaxed text-muted">
-        {log.map((e, i) => (
-          <span key={i}>
-            {e.white ? `${e.num}. ` : i === 0 ? `${e.num}… ` : ""}
-            {e.san}{" "}
-          </span>
-        ))}
-      </p>
+      <p className="mt-3 min-h-[1.6em] text-[1.15rem]">{prompt}</p>
+
+      {log.length > 0 ? (
+        <p className="mt-1 min-h-[1.5em] font-mono text-[12px] leading-relaxed text-muted">
+          {log.map((e, i) => (
+            <span key={i}>
+              {e.white ? `${e.num}. ` : i === 0 ? `${e.num}… ` : ""}
+              {e.san}{" "}
+            </span>
+          ))}
+        </p>
+      ) : (
+        <p className="mt-1 min-h-[1.5em] text-[0.98rem] text-muted">{p && "Did I find it?"}</p>
+      )}
 
       {p && (status === "solved" || status === "revealed") && (
         <p className="mt-1 text-[0.98rem] text-muted">{aftermath(p)}</p>
@@ -386,12 +454,6 @@ export function Puzzle() {
         </div>
         <span className="text-faint">{solved.length} solved</span>
       </div>
-
-      {p && (
-        <p className="mt-3 font-mono text-[11px] text-faint">
-          From my {p.speed} game, {month} · {p.me} vs {p.opp}
-        </p>
-      )}
     </div>
   );
 }
