@@ -50,7 +50,7 @@ export const projects: Project[] = [
   {
     name: "Macro Placement",
     stack: "Python · PyTorch",
-    line: "Chip macro placement for the Partcl/HRT challenge that beat RePlAce by 30%",
+    line: "Chip macro placement that beat RePlAce by 30%",
     code: "https://github.com/koralkulacoglu/macro-place-challenge-2026",
   },
   {
@@ -137,7 +137,7 @@ export const projects: Project[] = [
   {
     name: "Histopathology AI",
     stack: "Python · TensorFlow",
-    line: "A from-scratch neural net for cancer in tissue and blood images",
+    line: "A from-scratch neural net for cancer imaging",
     image: "/histopathology-ai.jpg",
     code: "https://github.com/koralkulacoglu/ScienceFair2021",
   },
