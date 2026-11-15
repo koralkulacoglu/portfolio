@@ -57,8 +57,7 @@ export default function Home() {
               </p>
               <p className="font-mono text-[12px] text-faint">{j.when}</p>
               <p className="col-span-2 mt-0.5 text-[0.98rem] text-muted">
-                {j.note}{" "}
-                <span className="text-faint">{j.place}</span>
+                {j.note}
               </p>
             </li>
           ))}

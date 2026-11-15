@@ -8,7 +8,6 @@ export const links = [
 export type Job = {
   company: string;
   role: string;
-  place: string;
   when: string;
   note: string;
 };
@@ -17,37 +16,26 @@ export const jobs: Job[] = [
   {
     company: "Coinbase",
     role: "Software Engineer Intern",
-    place: "San Francisco",
     when: "Summer 2026",
-    note: "Institutional Financing.",
-  },
-  {
-    company: "Optiver",
-    role: "FutureFocus",
-    place: "Chicago",
-    when: "Mar 2026",
-    note: "Built a TCP electronic exchange.",
+    note: "Cross margin across spot, derivatives and regulated perps.",
   },
   {
     company: "BitGo",
     role: "Software Engineer Intern",
-    place: "Palo Alto",
     when: "Fall 2025",
-    note: "Security tooling and static analysis for crypto custody.",
+    note: "A Rust linter guarding 320+ repos; static analysis 95% faster.",
   },
   {
     company: "AtoB",
     role: "Software Engineer Intern",
-    place: "San Francisco",
     when: "Winter 2025",
-    note: "Data pipelines and semantic matching for fuel statements.",
+    note: "Lead data pipelines and semantic PDF-to-SQL matching for fuel statements.",
   },
   {
     company: "D2L",
     role: "Software Engineer Intern",
-    place: "Toronto",
     when: "Summer 2024",
-    note: "Multi-agent tooling and knowledge graphs for semantic search.",
+    note: "A multi-agent framework for automated course QA, shipped as BrightspaceBot.",
   },
 ];
 
@@ -66,7 +54,7 @@ export const projects: Project[] = [
     name: "FIX Exchange",
     stack: "C++ · AWS",
     line: "An equity exchange that speaks FIX 4.2 over TCP.",
-    more: "Price-time priority matching engine, UDP multicast market data, and a SQLite event log for crash recovery. Runs on a bare-metal EC2 box at 28K+ orders/sec.",
+    more: "Price-time priority matching engine, UDP multicast market data, and a SQLite event log for crash recovery. Benchmarked on bare-metal EC2 at 28µs p99 engine latency and 27K orders/sec.",
     image: "/fix-exchange.png",
     code: "https://github.com/koralkulacoglu/fix-exchange",
   },
