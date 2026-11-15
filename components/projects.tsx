@@ -11,7 +11,7 @@ function Row({ p, n }: { p: Project; n: number }) {
     <li className="border-t border-rule">
       <Link
         href={`/projects/${slug(p.name)}`}
-        className="group grid grid-cols-[2.2rem_1fr_auto] items-baseline gap-x-2 py-3.5"
+        className="group grid grid-cols-[2.2rem_1fr_auto] items-baseline gap-x-2 py-2"
       >
         <span className="font-mono text-[12px] text-faint">{n}.</span>
         <span>
@@ -38,17 +38,20 @@ export function Projects() {
 
   return (
     <>
+      <div className="mb-3 flex items-baseline justify-between">
+        <h2 className="font-mono text-[11px] uppercase tracking-[0.14em] text-faint">Projects</h2>
+        <button
+          onClick={() => setAll((a) => !a)}
+          className="link font-mono text-[12px] text-muted"
+        >
+          {all ? "fewer" : `${projects.length - SHOWN} more`}
+        </button>
+      </div>
       <ol className="border-b border-rule">
         {list.map((p, i) => (
           <Row key={p.name} p={p} n={i + 1} />
         ))}
       </ol>
-      <button
-        onClick={() => setAll((a) => !a)}
-        className="link mt-4 font-mono text-[12px] text-muted"
-      >
-        {all ? "fewer" : `${projects.length - SHOWN} more projects`}
-      </button>
     </>
   );
 }
