@@ -1,5 +1,5 @@
 export const links = [
-  { label: "résumé", href: "/Koral_Resume.pdf" },
+  { label: "resume", href: "/Koral_Resume.pdf" },
   { label: "github", href: "https://github.com/koralkulacoglu" },
   { label: "linkedin", href: "https://linkedin.com/in/koralkulacoglu" },
   { label: "email", href: "mailto:kulacoglukoral@gmail.com" },
