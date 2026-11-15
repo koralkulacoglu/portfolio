@@ -27,7 +27,6 @@ export type Project = {
   name: string;
   stack: string;
   line: string;
-  more?: string;
   image?: string;
   code?: string;
   live?: string;
@@ -38,7 +37,6 @@ export const projects: Project[] = [
     name: "FIX Exchange",
     stack: "C++ · AWS",
     line: "An equity exchange that speaks FIX 4.2 over TCP.",
-    more: "Price-time priority matching engine, UDP multicast market data, and a SQLite event log for crash recovery. Benchmarked on bare-metal EC2 at 28µs p99 engine latency and 27K orders/sec.",
     image: "/fix-exchange.png",
     code: "https://github.com/koralkulacoglu/fix-exchange",
   },
@@ -46,22 +44,26 @@ export const projects: Project[] = [
     name: "3D Octree Compression",
     stack: "C++ · OpenGL",
     line: "Octree compression for 3D objects, up to 99% smaller.",
-    more: "Comes with a real-time OpenGL viewer to scrub through compression levels.",
     image: "/3d-octree-compression.gif",
     code: "https://github.com/koralkulacoglu/3d-octree-compression",
   },
   {
     name: "Macro Placement",
     stack: "Python · PyTorch",
-    line: "Chip macro placement for the Partcl/HRT challenge; beat RePlAce by 30%.",
-    more: "GPU-friendly, pure PyTorch/NumPy: FFT electrostatic global placement, then Lin-Kernighan k-opt and hierarchical late-acceptance hill climbing.",
+    line: "Chip macro placement for the Partcl/HRT challenge that beat RePlAce by 30%.",
     code: "https://github.com/koralkulacoglu/macro-place-challenge-2026",
+  },
+  {
+    name: "Smart Order Router",
+    stack: "Go",
+    line: "Merges live order books across exchanges and trades the spread.",
+    image: "/smart-order-router.gif",
+    code: "https://github.com/koralkulacoglu/smart-order-router",
   },
   {
     name: "FourSight",
     stack: "Python · TensorFlow",
     line: "Classifies 12 cancer types from microarray data at 95% accuracy.",
-    more: "Won the Canada-Wide Science Fair and took 2nd for Canada at the EU Contest for Young Scientists.",
     image: "/foursight.png",
     code: "https://github.com/redmac135/foursight",
     live: "https://partner.projectboard.world/ysc/project/foursight-analysis-of-cancerous-genetic-profiles-with-artificial-neural-networks",
@@ -70,24 +72,14 @@ export const projects: Project[] = [
     name: "Sematic",
     stack: "TypeScript · AWS",
     line: "A whiteboard that turns voice and video into diagrams, live.",
-    more: "Gemini 2.0 Flash on AWS Amplify Gen 2. Won AWS's Best Use of DynamoDB Streams at Hack the North.",
     image: "/sematic.gif",
     code: "https://github.com/koralkulacoglu/sematic",
     live: "https://sematic.ca",
   },
   {
-    name: "Smart Order Router",
-    stack: "Go",
-    line: "Merges live order books across exchanges and trades the spread.",
-    more: "Concurrent feeds build one thread-safe global book; arbitrage opportunities are executed as they appear, with a live dashboard on top.",
-    image: "/smart-order-router.gif",
-    code: "https://github.com/koralkulacoglu/smart-order-router",
-  },
-  {
     name: "Chess Puzzle Maker",
     stack: "Python · Stockfish",
-    line: "Mines my own games for puzzles. It feeds the board on this page.",
-    more: "Pulls every game from Lichess, runs Stockfish over each swing, and keeps positions where exactly one move wins. The best 100 are ranked and exported.",
+    line: "Mines my own games for the puzzles on this page.",
     code: "https://github.com/koralkulacoglu/chess-puzzle-maker",
   },
 ];
@@ -103,7 +95,7 @@ export const olderProjects: Project[] = [
   {
     name: "SentiTrader",
     stack: "Python · Keras",
-    line: "Trades on r/worldnews sentiment. 12% annualized, live.",
+    line: "Trades on r/worldnews sentiment at 12% annualized.",
     image: "/sentitrader.png",
     code: "https://github.com/koralkulacoglu/SentiTrader",
   },
@@ -118,7 +110,7 @@ export const olderProjects: Project[] = [
   {
     name: "Admini",
     stack: "React · AWS",
-    line: "Government contracting platform; led a team of five.",
+    line: "A government contracting platform built with a team of five.",
     image: "/admini.png",
     code: "https://github.com/admini-ca",
   },
@@ -132,7 +124,7 @@ export const olderProjects: Project[] = [
   {
     name: "Songsnap",
     stack: "Python · Flask",
-    line: "Photos in, Spotify playlist out. UofTHacks 2024.",
+    line: "Turns photos into Spotify playlists, built at UofTHacks 2024.",
     image: "/songsnap.png",
     code: "https://github.com/SubwayMan/songsnap",
     live: "https://devpost.com/software/songsnap-p10xbc",
@@ -140,7 +132,7 @@ export const olderProjects: Project[] = [
   {
     name: "NoteBot Bryan",
     stack: "Python · Whisper",
-    line: "Listens to lectures and writes notes. DeltaHacks 2024.",
+    line: "Listens to lectures and writes notes, built at DeltaHacks 2024.",
     image: "/notebot-bryan.jpg",
     code: "https://github.com/romistaro/NoteBotBryan",
     live: "https://devpost.com/software/bryan",
@@ -163,7 +155,7 @@ export const olderProjects: Project[] = [
   {
     name: "Competitive Programming",
     stack: "C++ · Python",
-    line: "Contest solutions and templates. 17th in Canada, picoCTF 2022.",
+    line: "Contest solutions and templates, including 17th in Canada at picoCTF 2022.",
     image: "/competitive-programming.jpg",
     code: "https://github.com/koralkulacoglu/CompetitiveProgramming",
   },
