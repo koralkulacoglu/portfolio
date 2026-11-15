@@ -19,8 +19,8 @@ export default function Home() {
           Koral Kulacoglu
         </h1>
         <p className="mt-6 max-w-[34rem] text-[1.2rem] leading-relaxed text-muted">
-          I study software engineering at Waterloo and like making systems
-          fast.
+          I study software engineering at Waterloo and like systems
+          programming and chess.
         </p>
         <nav className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[13px]">
           {links.map((l) => (
