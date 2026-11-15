@@ -30,7 +30,7 @@ export default function Home() {
           Koral Kulacoglu
         </h1>
         <p className="mt-3 font-mono text-[13px] text-faint">
-          Software Engineering · University of Waterloo
+          Software Engineering @ University of Waterloo
         </p>
         <p className="mt-4 max-w-[34rem] text-[1.2rem] leading-relaxed text-muted">
           I like systems programming and chess
