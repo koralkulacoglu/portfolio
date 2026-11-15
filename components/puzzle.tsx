@@ -325,7 +325,10 @@ export function Puzzle() {
     else if (status === "revealed") prompt = "Here's the line.";
     else if (status === "wrong") prompt = <span className="text-accent">Not that one.</span>;
     else if (log.length > 0) prompt = "Good. Keep going.";
-    else prompt = `${side} to play. I ${p.found ? "found" : "missed"} ${goal}.`;
+    else {
+      const did = `I ${p.found ? "found" : "missed"} ${goal}.`;
+      prompt = idx === 0 ? `My game as ${p.color}. ${did}` : `${side} to play. ${did}`;
+    }
   }
 
   const month = p
@@ -416,10 +419,6 @@ export function Puzzle() {
       />
 
       <p className="mt-3 min-h-[1.6em] text-[1.15rem]">{prompt}</p>
-
-      {log.length === 0 && idx === 0 && p && (
-        <p className="mt-1 text-[0.98rem] text-muted">Each puzzle here is from one of my own games.</p>
-      )}
 
       {log.length > 0 && (
         <p className="mt-1 font-mono text-[12px] leading-relaxed text-muted">
