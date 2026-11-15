@@ -71,7 +71,7 @@ export const projects: Project[] = [
   {
     name: "Sematic",
     stack: "TypeScript · AWS",
-    line: "A whiteboard that turns voice and video into diagrams, live",
+    line: "A voice-to-diagram whiteboard that won at Hack the North",
     image: "/sematic.gif",
     code: "https://github.com/koralkulacoglu/sematic",
     live: "https://sematic.ca",
