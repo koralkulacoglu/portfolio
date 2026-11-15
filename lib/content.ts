@@ -29,7 +29,7 @@ export const jobs: Job[] = [
   {
     company: "Waterloo Systems & Networking Group",
     role: "Research Assistant",
-    when: "Fall 2026 – now",
+    when: "Fall 2026",
     note: "Measuring tail latency of Rakaia, an in-kernel RPC scheduler, on a KVM testbed.",
   },
   {
