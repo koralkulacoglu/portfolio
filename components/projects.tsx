@@ -50,7 +50,7 @@ export function Projects() {
         className="group grid w-full grid-cols-[2.2rem_1fr] items-baseline gap-x-2 border-y border-rule py-2.5 text-left font-mono text-[12px] text-muted transition-colors hover:text-accent"
       >
         <span aria-hidden className="text-faint transition-colors group-hover:text-accent">
-          {all ? "−" : "+"}
+          {all ? "−" : "…"}
         </span>
         <span>{all ? "show fewer" : `${projects.length - SHOWN} more projects`}</span>
       </button>
