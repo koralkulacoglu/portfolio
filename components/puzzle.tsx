@@ -97,7 +97,7 @@ function PlayerBar({
 }
 
 function aftermath(p: PuzzleData) {
-  if (p.found) return "I found it in the game.";
+  if (p.found) return null;
   const tail =
     p.result === "win"
       ? " and won anyway"
@@ -325,7 +325,7 @@ export function Puzzle() {
     else if (status === "revealed") prompt = "Here's the line.";
     else if (status === "wrong") prompt = <span className="text-accent">Not that one.</span>;
     else if (log.length > 0) prompt = "Good. Keep going.";
-    else prompt = `${side} to play. Find ${goal}.`;
+    else prompt = `${side} to play. I ${p.found ? "found" : "missed"} ${goal}.`;
   }
 
   const month = p
@@ -419,8 +419,8 @@ export function Puzzle() {
 
       <p className="mt-3 min-h-[1.6em] text-[1.15rem]">{prompt}</p>
 
-      {log.length > 0 ? (
-        <p className="mt-1 min-h-[1.5em] font-mono text-[12px] leading-relaxed text-muted">
+      {log.length > 0 && (
+        <p className="mt-1 font-mono text-[12px] leading-relaxed text-muted">
           {log.map((e, i) => (
             <span key={i}>
               {e.white ? `${e.num}. ` : i === 0 ? `${e.num}… ` : ""}
@@ -428,11 +428,9 @@ export function Puzzle() {
             </span>
           ))}
         </p>
-      ) : (
-        <p className="mt-1 min-h-[1.5em] text-[0.98rem] text-muted">{p && "Did I find it?"}</p>
       )}
 
-      {p && (status === "solved" || status === "revealed") && (
+      {p && !p.found && (status === "solved" || status === "revealed") && (
         <p className="mt-1 text-[0.98rem] text-muted">{aftermath(p)}</p>
       )}
 
