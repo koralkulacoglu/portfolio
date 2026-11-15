@@ -335,9 +335,7 @@ export function Puzzle() {
   return (
     <div>
       <div className="mb-4 flex items-baseline justify-between font-mono text-[11px] uppercase tracking-[0.14em] text-faint">
-        <h2>
-          From my games{p && <span className="ml-3 tracking-normal">{idx + 1} / {puzzles!.length}</span>}
-        </h2>
+        <h2 className="tracking-normal">{p && `${idx + 1} / ${puzzles!.length}`}</h2>
         <div className="flex gap-1 normal-case tracking-normal">
           <button onClick={() => go(-1)} className="px-1.5 text-[14px] hover:text-accent" aria-label="Previous puzzle">
             ←
