@@ -77,14 +77,19 @@ export const projects: Project[] = [
     live: "https://sematic.ca",
   },
   {
+    name: "Autonomous Car",
+    stack: "Python · OpenCV",
+    line: "Lane detection plus sign and vehicle tracking with YOLOv4-tiny.",
+    image: "/autonomous-car.gif",
+    code: "https://github.com/koralkulacoglu/AutonomousCar",
+    live: "https://www.youtube.com/watch?v=I9cR4of2jlo&list=PL4iMkUwfSFa3LzvXLPlDLKk0EshU3x4gV",
+  },
+  {
     name: "Chess Puzzle Maker",
     stack: "Python · Stockfish",
     line: "Mines my own games for the puzzles on this page.",
     code: "https://github.com/koralkulacoglu/chess-puzzle-maker",
   },
-];
-
-export const olderProjects: Project[] = [
   {
     name: "PrsntAI",
     stack: "Python · React",
@@ -98,14 +103,6 @@ export const olderProjects: Project[] = [
     line: "Trades on r/worldnews sentiment at 12% annualized.",
     image: "/sentitrader.png",
     code: "https://github.com/koralkulacoglu/SentiTrader",
-  },
-  {
-    name: "Autonomous Car",
-    stack: "Python · OpenCV",
-    line: "Lane detection plus sign and vehicle tracking with YOLOv4-tiny.",
-    image: "/autonomous-car.gif",
-    code: "https://github.com/koralkulacoglu/AutonomousCar",
-    live: "https://www.youtube.com/watch?v=I9cR4of2jlo&list=PL4iMkUwfSFa3LzvXLPlDLKk0EshU3x4gV",
   },
   {
     name: "Admini",
@@ -161,6 +158,7 @@ export const olderProjects: Project[] = [
   },
 ];
 
+
 export const webring = {
   home: "https://se-webring.xyz",
   prev: "https://seanyang.ca/",
@@ -170,4 +168,3 @@ export const webring = {
 export const slug = (name: string) =>
   name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
-export const allProjects = [...projects, ...olderProjects];

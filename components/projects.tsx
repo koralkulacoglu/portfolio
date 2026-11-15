@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { olderProjects, projects, slug, type Project } from "@/lib/content";
+import { projects, slug, type Project } from "@/lib/content";
+
+const SHOWN = 3;
 
 function Row({ p, n }: { p: Project; n: number }) {
   return (
@@ -31,8 +33,8 @@ function Row({ p, n }: { p: Project; n: number }) {
 }
 
 export function Projects() {
-  const [showOlder, setShowOlder] = useState(false);
-  const list = showOlder ? [...projects, ...olderProjects] : projects;
+  const [all, setAll] = useState(false);
+  const list = all ? projects : projects.slice(0, SHOWN);
 
   return (
     <>
@@ -42,10 +44,10 @@ export function Projects() {
         ))}
       </ol>
       <button
-        onClick={() => setShowOlder((s) => !s)}
+        onClick={() => setAll((a) => !a)}
         className="link mt-4 font-mono text-[12px] text-muted"
       >
-        {showOlder ? "fewer" : `${olderProjects.length} older projects`}
+        {all ? "fewer" : `${projects.length - SHOWN} more projects`}
       </button>
     </>
   );

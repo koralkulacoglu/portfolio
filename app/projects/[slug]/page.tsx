@@ -5,17 +5,17 @@ import Markdown, { defaultUrlTransform } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
-import { allProjects, slug } from "@/lib/content";
+import { projects, slug } from "@/lib/content";
 import { fetchReadme, type Readme } from "@/lib/github";
 
 export const revalidate = 86400;
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return allProjects.map((p) => ({ slug: slug(p.name) }));
+  return projects.map((p) => ({ slug: slug(p.name) }));
 }
 
-const find = (s: string) => allProjects.find((p) => slug(p.name) === s);
+const find = (s: string) => projects.find((p) => slug(p.name) === s);
 
 export async function generateMetadata({
   params,
