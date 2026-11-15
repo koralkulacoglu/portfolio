@@ -45,10 +45,35 @@ type HastNode = {
   children?: HastNode[];
 };
 
-/** Turns <img height/width> into inline styles, since the CSS reset forces height: auto. */
+const ATTACHMENT = /^https:\/\/github\.com\/(?:[^/]+\/[^/]+\/assets\/\d+|user-attachments\/assets)\/[0-9a-f-]+$/;
+
+/** A paragraph that is only a bare GitHub attachment link, which GitHub renders as a video player. */
+function bareAttachment(n: HastNode): string | null {
+  if (n.tagName !== "p") return null;
+  const kids = (n.children ?? []).filter(
+    (c) => !(c.type === "text" && !String((c as { value?: string }).value).trim()),
+  );
+  const a = kids[0];
+  if (kids.length !== 1 || a.tagName !== "a") return null;
+  const href = String(a.properties?.href ?? "");
+  return ATTACHMENT.test(href) ? href : null;
+}
+
+/**
+ * Post-sanitize tweaks:
+ * - <img height/width> become inline styles, since the CSS reset forces height: auto
+ * - bare GitHub attachment links become <video>, like on GitHub
+ */
 function imgSize() {
   const px = (v: unknown) => (/^\d+$/.test(String(v)) ? `${v}px` : String(v));
   const walk = (n: HastNode) => {
+    const video = bareAttachment(n);
+    if (video) {
+      n.tagName = "video";
+      n.properties = { src: video, controls: true, muted: true, playsInline: true, preload: "metadata" };
+      n.children = [];
+      return;
+    }
     if (n.tagName === "img" && n.properties) {
       const { height, width } = n.properties;
       const style: string[] = [];
@@ -123,7 +148,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             // eslint-disable-next-line @next/next/no-img-element
             <img src={p.image} alt="" />
           )}
-          {p.more && <p>{p.more}</p>}
         </article>
       )}
     </div>
