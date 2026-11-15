@@ -38,20 +38,22 @@ export function Projects() {
 
   return (
     <>
-      <div className="mb-3 flex items-baseline justify-between">
-        <h2 className="font-mono text-[11px] uppercase tracking-[0.14em] text-faint">Projects</h2>
-        <button
-          onClick={() => setAll((a) => !a)}
-          className="link font-mono text-[12px] text-muted"
-        >
-          {all ? "fewer" : `${projects.length - SHOWN} more`}
-        </button>
-      </div>
-      <ol className="border-b border-rule">
+      <h2 className="mb-3 font-mono text-[11px] uppercase tracking-[0.14em] text-faint">Projects</h2>
+      <ol>
         {list.map((p, i) => (
           <Row key={p.name} p={p} n={i + 1} />
         ))}
       </ol>
+      <button
+        onClick={() => setAll((a) => !a)}
+        aria-expanded={all}
+        className="group grid w-full grid-cols-[2.2rem_1fr] items-baseline gap-x-2 border-y border-rule py-2.5 text-left font-mono text-[12px] text-muted transition-colors hover:text-accent"
+      >
+        <span aria-hidden className="text-faint transition-colors group-hover:text-accent">
+          {all ? "−" : "+"}
+        </span>
+        <span>{all ? "show fewer" : `${projects.length - SHOWN} more projects`}</span>
+      </button>
     </>
   );
 }
