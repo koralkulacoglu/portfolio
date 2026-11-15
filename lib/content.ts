@@ -7,55 +7,19 @@ export const links = [
 
 export type Job = {
   company: string;
-  role: string;
+  what?: string;
   when: string;
-  note?: string;
   incoming?: boolean;
 };
 
 export const jobs: Job[] = [
-  {
-    company: "Google",
-    role: "Software Engineer Intern",
-    when: "Summer 2027",
-    incoming: true,
-  },
-  {
-    company: "Baseten",
-    role: "LLM Performance Engineer Intern",
-    when: "Winter 2027",
-    incoming: true,
-  },
-  {
-    company: "Waterloo Systems & Networking Group",
-    role: "Research Assistant",
-    when: "Fall 2026",
-    note: "Measuring tail latency of Rakaia, an in-kernel RPC scheduler, on a KVM testbed.",
-  },
-  {
-    company: "Coinbase",
-    role: "Software Engineer Intern",
-    when: "Summer 2026",
-    note: "A Go risk pipeline for cross margin; parameter staleness cut from 24h to 30min.",
-  },
-  {
-    company: "BitGo",
-    role: "Software Engineer Intern",
-    when: "Fall 2025",
-    note: "A Rust static analysis engine guarding 320+ repos; 95% faster.",
-  },
-  {
-    company: "AtoB",
-    role: "Software Engineer Intern",
-    when: "Winter 2025",
-    note: "Lead-scoring pipelines: Rails event tracking and a UCC-1 scraper.",
-  },
-  {
-    company: "D2L",
-    role: "Software Engineer Intern",
-    when: "Summer 2024",
-    note: "A multi-agent framework for automated course QA, shipped as BrightspaceBot.",
-  },
+  { company: "Google", when: "Summer 2027", incoming: true },
+  { company: "Baseten", what: "LLM inference performance", when: "Winter 2027", incoming: true },
+  { company: "Waterloo Systems & Networking Group", what: "kernel RPC scheduling", when: "Fall 2026" },
+  { company: "Coinbase", what: "risk infrastructure for cross-margin trading", when: "Summer 2026" },
+  { company: "BitGo", what: "static analysis for supply chain security", when: "Fall 2025" },
+  { company: "AtoB", what: "data pipelines for lead scoring", when: "Winter 2025" },
+  { company: "D2L", what: "multi-agent simulation for course QA", when: "Summer 2024" },
 ];
 
 export type Project = {
