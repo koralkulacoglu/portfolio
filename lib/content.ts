@@ -7,19 +7,20 @@ export const links = [
 
 export type Job = {
   company: string;
+  logo: string;
   what?: string;
   when: string;
   incoming?: boolean;
 };
 
 export const jobs: Job[] = [
-  { company: "Google", when: "Summer 2027", incoming: true },
-  { company: "Baseten", what: "LLM inference performance", when: "Winter 2027", incoming: true },
-  { company: "Waterloo Systems & Networking Group", what: "kernel RPC scheduling", when: "Fall 2026" },
-  { company: "Coinbase", what: "risk infrastructure for cross-margin trading", when: "Summer 2026" },
-  { company: "BitGo", what: "static analysis for supply chain security", when: "Fall 2025" },
-  { company: "AtoB", what: "data pipelines for lead scoring", when: "Winter 2025" },
-  { company: "D2L", what: "multi-agent simulation for course QA", when: "Summer 2024" },
+  { company: "Google", logo: "google", when: "Summer 2027", incoming: true },
+  { company: "Baseten", logo: "baseten", what: "LLM inference performance", when: "Winter 2027", incoming: true },
+  { company: "Waterloo Systems & Networking Group", logo: "waterloo", what: "kernel RPC scheduling", when: "Fall 2026" },
+  { company: "Coinbase", logo: "coinbase", what: "risk infrastructure for cross-margin trading", when: "Summer 2026" },
+  { company: "BitGo", logo: "bitgo", what: "static analysis for supply chain security", when: "Fall 2025" },
+  { company: "AtoB", logo: "atob", what: "data pipelines for lead scoring", when: "Winter 2025" },
+  { company: "D2L", logo: "d2l", what: "multi-agent simulation for course QA", when: "Summer 2024" },
 ];
 
 export type Project = {
