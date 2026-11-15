@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import { Chess, type Square } from "chess.js";
 import {
   Chessboard,
@@ -419,6 +420,16 @@ export function Puzzle() {
       />
 
       <p className="mt-3 min-h-[1.6em] text-[1.15rem]">{prompt}</p>
+
+      {log.length === 0 && idx === 0 && p && (
+        <p className="mt-1 text-[0.98rem] text-muted">
+          I turned my games into puzzles.{" "}
+          <Link href="/projects/chess-puzzle-maker" className="link">
+            Here&rsquo;s how
+          </Link>{" "}
+          <span aria-hidden>→</span>
+        </p>
+      )}
 
       {log.length > 0 && (
         <p className="mt-1 font-mono text-[12px] leading-relaxed text-muted">
