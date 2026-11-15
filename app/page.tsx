@@ -75,7 +75,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="lg:col-start-1">
+      <section id="projects" className="scroll-mt-12 lg:col-start-1">
         <Label>Projects</Label>
         <Projects />
       </section>

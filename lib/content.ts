@@ -174,3 +174,8 @@ export const webring = {
   prev: "https://seanyang.ca/",
   next: "https://www.ekpraveen.ca/",
 };
+
+export const slug = (name: string) =>
+  name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+export const allProjects = [...projects, ...olderProjects];
