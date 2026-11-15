@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://koralkulacoglu.com"),
   title: "Koral Kulacoglu",
   description:
-    "Software engineering at Waterloo. Low-level systems, concurrency, and making things fast.",
+    "Software engineering at Waterloo. I like making systems fast.",
   manifest: "/site.webmanifest",
   icons: {
     icon: [
