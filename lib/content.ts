@@ -9,27 +9,46 @@ export type Job = {
   company: string;
   role: string;
   when: string;
-  note: string;
+  note?: string;
+  incoming?: boolean;
 };
 
 export const jobs: Job[] = [
   {
+    company: "Google",
+    role: "Software Engineer Intern",
+    when: "Summer 2027",
+    incoming: true,
+  },
+  {
+    company: "Baseten",
+    role: "LLM Performance Engineer Intern",
+    when: "Winter 2027",
+    incoming: true,
+  },
+  {
+    company: "Waterloo Systems & Networking Group",
+    role: "Research Assistant",
+    when: "Fall 2026 – now",
+    note: "Measuring tail latency of Rakaia, an in-kernel RPC scheduler, on a KVM testbed.",
+  },
+  {
     company: "Coinbase",
     role: "Software Engineer Intern",
     when: "Summer 2026",
-    note: "Cross margin across spot, derivatives and regulated perps.",
+    note: "A Go risk pipeline for cross margin; parameter staleness cut from 24h to 30min.",
   },
   {
     company: "BitGo",
     role: "Software Engineer Intern",
     when: "Fall 2025",
-    note: "A Rust linter guarding 320+ repos; static analysis 95% faster.",
+    note: "A Rust static analysis engine guarding 320+ repos; 95% faster.",
   },
   {
     company: "AtoB",
     role: "Software Engineer Intern",
     when: "Winter 2025",
-    note: "Lead data pipelines and semantic PDF-to-SQL matching for fuel statements.",
+    note: "Lead-scoring pipelines: Rails event tracking and a UCC-1 scraper.",
   },
   {
     company: "D2L",
@@ -65,6 +84,13 @@ export const projects: Project[] = [
     more: "Concurrent feeds build one thread-safe global book; arbitrage opportunities are executed as they appear, with a live dashboard on top.",
     image: "/smart-order-router.gif",
     code: "https://github.com/koralkulacoglu/smart-order-router",
+  },
+  {
+    name: "Macro Placement",
+    stack: "Python · PyTorch",
+    line: "Chip macro placement for the Partcl/HRT challenge; beat RePlAce by 30%.",
+    more: "GPU-friendly, pure PyTorch/NumPy: FFT electrostatic global placement, then Lin-Kernighan k-opt and hierarchical late-acceptance hill climbing.",
+    code: "https://github.com/koralkulacoglu/macro-place-challenge-2026",
   },
   {
     name: "Chess Puzzle Maker",
