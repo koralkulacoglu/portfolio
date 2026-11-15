@@ -14,7 +14,7 @@ export type Job = {
 };
 
 export const jobs: Job[] = [
-  { company: "Google", logo: "google", when: "Summer 2027", incoming: true },
+  { company: "Google", logo: "google", what: "searching for a host team (:", when: "Summer 2027", incoming: true },
   { company: "Baseten", logo: "baseten", what: "LLM inference performance", when: "Winter 2027", incoming: true },
   { company: "Waterloo Systems & Networking Group", logo: "waterloo", what: "kernel RPC scheduling", when: "Fall 2026" },
   { company: "Coinbase", logo: "coinbase", what: "risk infrastructure for cross-margin trading", when: "Summer 2026" },
