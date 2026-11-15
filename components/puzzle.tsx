@@ -408,9 +408,7 @@ export function Puzzle() {
         right={
           p?.clock != null && (
             <span
-              className={`rounded-[3px] border px-1.5 py-px tabular-nums ${
-                p.clock < 10 ? "border-accent text-accent" : "border-rule text-muted"
-              }`}
+              className="rounded-[3px] border border-rule px-1.5 py-px tabular-nums text-muted"
               title="My clock at this moment"
             >
               {formatClock(p.clock)}
