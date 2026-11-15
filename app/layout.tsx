@@ -21,20 +21,13 @@ export const metadata: Metadata = {
   title: "Koral Kulacoglu",
   description:
     "Software engineering at Waterloo. I like systems programming and chess.",
-  manifest: "/site.webmanifest",
-  icons: {
-    icon: [
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-    ],
-    apple: "/apple-touch-icon.png",
-  },
   openGraph: {
     title: "Koral Kulacoglu",
-    description: "Software engineering at Waterloo.",
+    description: "Software Engineering @ University of Waterloo",
     url: "/",
     type: "website",
   },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {
