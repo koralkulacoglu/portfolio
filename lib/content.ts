@@ -36,7 +36,7 @@ export const projects: Project[] = [
   {
     name: "FIX Exchange",
     stack: "C++ · AWS",
-    line: "A persistent equity exchange with FIX 4.2 over TCP.",
+    line: "A persistent equity exchange using FIX 4.2 over TCP.",
     image: "/fix-exchange.png",
     code: "https://github.com/koralkulacoglu/fix-exchange",
   },
