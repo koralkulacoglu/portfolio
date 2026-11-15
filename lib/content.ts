@@ -152,7 +152,7 @@ export const projects: Project[] = [
   {
     name: "Competitive Programming",
     stack: "C++ · Python",
-    line: "Contest solutions and templates, including 17th in Canada at picoCTF 2022",
+    line: "Contest solutions and templates, 17th in Canada at picoCTF 2022",
     image: "/competitive-programming.jpg",
     code: "https://github.com/koralkulacoglu/CompetitiveProgramming",
   },
