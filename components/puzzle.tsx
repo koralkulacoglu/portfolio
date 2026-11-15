@@ -328,7 +328,18 @@ export function Puzzle() {
     else if (log.length > 0) prompt = "Good. Keep going.";
     else {
       const did = `I ${p.found ? "found" : "missed"} ${goal}.`;
-      prompt = idx === 0 ? `My game as ${p.color}. ${did}` : `${side} to play. ${did}`;
+      prompt =
+        idx === 0 ? (
+          <>
+            I{" "}
+            <Link href="/projects/chess-puzzle-maker" className="link">
+              turned my games into puzzles
+            </Link>
+            . Can you find {goal} as {p.color}?
+          </>
+        ) : (
+          `${side} to play. ${did}`
+        );
     }
   }
 
@@ -420,16 +431,6 @@ export function Puzzle() {
       />
 
       <p className="mt-3 min-h-[1.6em] text-[1.15rem]">{prompt}</p>
-
-      {log.length === 0 && idx === 0 && p && (
-        <p className="mt-1 text-[0.98rem] text-muted">
-          I turned my games into puzzles.{" "}
-          <Link href="/projects/chess-puzzle-maker" className="link">
-            Here&rsquo;s how
-          </Link>{" "}
-          <span aria-hidden>→</span>
-        </p>
-      )}
 
       {log.length > 0 && (
         <p className="mt-1 font-mono text-[12px] leading-relaxed text-muted">
